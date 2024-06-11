@@ -117,6 +117,13 @@ const projectConfig = {
   database_driver_options: process.env.NODE_ENV !== "development" ? { ssl: { rejectUnauthorized: false } } : {}
  };
 
+ console.log(projectConfig.database_extra)
+ console.log(projectConfig.database_driver_options)
+ console.log(projectConfig.database_extra.ssl)
+ console.log(projectConfig.database_driver_options.ssl)
+ console.log(process.env.NODE_ENV)
+
+
 /** @type {import('@medusajs/medusa').ConfigModule} */
 module.exports = {
   projectConfig,
