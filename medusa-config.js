@@ -51,6 +51,7 @@ const plugins = [
       develop: {
         open: process.env.OPEN_BROWSER !== "false",
       },
+      port: 2096
     },
   },
   //** Payments */
@@ -112,8 +113,9 @@ const projectConfig = {
   admin_cors: ADMIN_CORS,
   redis_url: REDIS_URL,
   worker_mode: process.env.MEDUSA_WORKER_MODE,
-
-};
+  database_extra: process.env.NODE_ENV !== "development" ? { ssl: { rejectUnauthorized: false } } : {},
+  database_driver_options: process.env.NODE_ENV !== "development" ? { ssl: { rejectUnauthorized: false } } : {}
+ };
 
 /** @type {import('@medusajs/medusa').ConfigModule} */
 module.exports = {
