@@ -114,13 +114,11 @@ const projectConfig = {
   redis_url: REDIS_URL,
   worker_mode: process.env.MEDUSA_WORKER_MODE,
   database_extra: process.env.NODE_ENV !== "development" ? { ssl: { rejectUnauthorized: false } } : {},
-  database_driver_options: process.env.NODE_ENV !== "development" ? { ssl: { rejectUnauthorized: false } } : {}
+  database_driver_options: process.env.NODE_ENV !== "development" ? { connection: { ssl: { rejectUnauthorized: false } } } : {}
  };
 
  console.log(projectConfig.database_extra)
  console.log(projectConfig.database_driver_options)
- console.log(projectConfig.database_extra.ssl)
- console.log(projectConfig.database_driver_options.ssl)
  console.log(process.env.NODE_ENV)
 
 
