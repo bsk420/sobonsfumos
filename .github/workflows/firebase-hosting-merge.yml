@@ -11,11 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-<<<<<<< HEAD
       - run: yarn && && yarnase build
-=======
-      - run: npm ci && npm install  && yarn install --frozen-lockfile && yarn build
->>>>>>> 21f2f4ac4f5b0a4debd0ba2fb7d3ce6d70c535a0
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
