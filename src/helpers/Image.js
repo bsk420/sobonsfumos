@@ -14,7 +14,7 @@ export default ({ url, background="black", className="video" }) => {
       }}
     >
       <img
-        alt='image'
+        alt='sbftv'
         style={{
           position: "absolute",
           top: 0,

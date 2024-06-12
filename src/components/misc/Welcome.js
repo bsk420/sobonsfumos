@@ -2,9 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import { SectionHeading } from "components/misc/Headings.js";
 import DocumentariesLogo from "images/sobonsfumos/sbftv-logo512.png";
-import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
@@ -22,11 +20,7 @@ const Description = tw.p`mt-4 text-center md:text-left text-2xl md:text-2xl lg:t
 
 export default ({
   description = "More than a brand, it's a celebration of cannabis culture. We craft threads by the culture, for the culture. Rep your love for the plant with high-quality apparel that sparks conversation and elevates the experience. Join the movement.",
-  imageSrc = DocumentariesLogo,
-  imageCss = null,
   imageContainerCss = null,
-  imageDecoratorBlob = false,
-  imageDecoratorBlobCss = null,
   imageInsideDiv = true,
   textOnLeft = false
 }) => {
