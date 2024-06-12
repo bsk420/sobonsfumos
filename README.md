@@ -1,29 +1,21 @@
 <p align="center">
-  <a href="https://www.medusajs.com">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/59018053/229103275-b5e482bb-4601-46e6-8142-244f531cebdb.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/59018053/229103726-e5b529a3-9b3f-4970-8a1f-c6af37f087bf.svg">
-    <img alt="Medusa logo" src="https://user-images.githubusercontent.com/59018053/229103726-e5b529a3-9b3f-4970-8a1f-c6af37f087bf.svg">
-    </picture>
+  <a href="https://medusajs.com/">
+    <img alt="Medusa" src="./public/medusa-svg.svg" width="400" />
   </a>
 </p>
 <h1 align="center">
-  Medusa
+  Medusa Express
 </h1>
-
-<h4 align="center">
-  <a href="https://docs.medusajs.com">Documentation</a> |
-  <a href="https://www.medusajs.com">Website</a>
-</h4>
-
 <p align="center">
-  Building blocks for digital commerce
+Medusa is an open-source headless commerce engine that enables developers to create amazing digital commerce experiences.
 </p>
 <p align="center">
+  <a href="https://github.com/medusajs/medusa/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="Medusa is released under the MIT license." />
+  </a>
   <a href="https://github.com/medusajs/medusa/blob/master/CONTRIBUTING.md">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" alt="PRs welcome!" />
   </a>
-    <a href="https://www.producthunt.com/posts/medusa"><img src="https://img.shields.io/badge/Product%20Hunt-%231%20Product%20of%20the%20Day-%23DA552E" alt="Product Hunt"></a>
   <a href="https://discord.gg/xpCwq3Kfn8">
     <img src="https://img.shields.io/badge/chat-on%20discord-7289DA.svg" alt="Discord Chat" />
   </a>
@@ -32,39 +24,73 @@
   </a>
 </p>
 
-## Compatibility
+<br/>
 
-This starter is compatible with versions >= 1.8.0 of `@medusajs/medusa`. 
+## Built with
+### [Medusa](https://www.medusajs.com): Commerce engine
+### [Next.js](https://nextjs.org/): React framework
+### [Stripe](https://stripe.com/en-gb-dk): Payment provider
+### [Medusa React](https://github.com/medusajs/medusa/tree/master/packages/medusa-react): Hooks and components for Medusa
 
-## Getting Started
+<br/>
 
-Visit the [Quickstart Guide](https://docs.medusajs.com/create-medusa-app) to set up a server.
+**Prerequisites**: To use Medusa Express, you need a Medusa server. Check out [medusa-starter-default](https://github.com/medusajs/medusa-starter-default) for a quick setup.
 
-Visit the [Docs](https://docs.medusajs.com/development/backend/prepare-environment) to learn more about our system requirements.
+<br/>
 
-## What is Medusa
+## 🚀 Get started!
 
-Medusa is a set of commerce modules and tools that allow you to build rich, reliable, and performant commerce applications without reinventing core commerce logic. The modules can be customized and used to build advanced ecommerce stores, marketplaces, or any product that needs foundational commerce primitives. All modules are open-source and freely available on npm.
+### Deploy in 5 minutes
 
-Learn more about [Medusa’s architecture](https://docs.medusajs.com/development/fundamentals/architecture-overview) and [commerce modules](https://docs.medusajs.com/modules/overview) in the Docs.
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/medusajs/medusa-express-nextjs)
 
-## Roadmap, Upgrades & Plugins
+### 1. Create your Medusa Express project
 
-You can view the planned, started and completed features in the [Roadmap discussion](https://github.com/medusajs/medusa/discussions/categories/roadmap).
+#### Use npx and select medusa.express (recommended)
+```zsh  
+  npx create-medusa-app@latest
+```
 
-Follow the [Upgrade Guides](https://docs.medusajs.com/upgrade-guides/) to keep your Medusa project up-to-date.
+#### Use git clone
+```zsh  
+  git clone --depth=1 https://github.com/medusajs/medusa-express-nextjs medusa-express
+```
 
-Check out all [available Medusa plugins](https://medusajs.com/plugins/).
+### 2. Navigate to project and install dependencies
 
-## Community & Contributions
+```zsh
+  cd <your-express-folder>
+  
+  yarn
+  # or
+  npm install
+```
 
-The community and core team are available in [GitHub Discussions](https://github.com/medusajs/medusa/discussions), where you can ask for support, discuss roadmap, and share ideas.
+### 3. Link your Medusa server
 
-Join our [Discord server](https://discord.com/invite/medusajs) to meet other community members.
+In your project, you should have a `.env.template` file with the following content:
 
-## Other channels
+```shell
+NEXT_PUBLIC_MEDUSA_BACKEND_URL=http://localhost:9000
+```
 
-- [GitHub Issues](https://github.com/medusajs/medusa/issues)
-- [Twitter](https://twitter.com/medusajs)
-- [LinkedIn](https://www.linkedin.com/company/medusajs)
-- [Medusa Blog](https://medusajs.com/blog/)
+Copy the template into a file used for local development:
+```zsh
+mv .env.template .env.local
+```
+
+Add Stripe API key as environment variable to complete orders:
+```zsh
+# Stripe key is required for completing orders
+NEXT_PUBLIC_STRIPE_API_KEY=pk_test_... 
+```
+
+Your Medusa server runs locally on port 9000 by default. Make sure to update the above environment variable, if you've changed the port.
+
+### 4. Try it out!
+
+Start up both your Medusa server and Medusa Express and try it out!
+
+Medusa Express is running at `http://localhost:8000`!
+
+> **Important**: Medusa Express requires existing product. Either seed your Medusa server with some dummy products, or create your own through Medusa Admin.
