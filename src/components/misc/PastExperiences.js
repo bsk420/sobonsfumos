@@ -4,7 +4,6 @@ import tw from "twin.macro";
 import { ReactComponent as SvgDotPatternIcon } from "../../images/dot-pattern.svg";
 import { SectionHeading as HeadingTitle } from "../../components/misc/Headings.js";
 
-import image from "images/sobonsfumos/sbftv-icon.png";
 
 
 const Container = tw.div`relative`;
@@ -12,7 +11,6 @@ const Container = tw.div`relative`;
 const SingleColumn = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 
 const HeadingInfoContainer = tw.div`flex flex-col items-center`;
-const HeadingDescription = tw.p`mt-4 font-medium text-gray-600 text-center `;
 
 const Content = tw.div`mt-16`;
 
@@ -28,7 +26,6 @@ const Details = tw.div`mt-4 md:mt-0 md:max-w-md mx-4 sm:mx-8 md:mx-4 lg:mx-8`;
 const Subtitle = tw.div`font-bold tracking-wide text-secondary-100`;
 const Title = tw.h4`text-3xl font-bold text-white`;
 const Description = tw.p`mt-2 text-lg leading-loose text-white`;
-const Link = tw.a`inline-block mt-4 text-sm text-primary-500 font-bold cursor-pointer transition duration-300 border-b-2 border-transparent hover:border-primary-500`;
 
 const SvgDotPattern1 = tw(
   SvgDotPatternIcon

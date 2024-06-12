@@ -14,6 +14,7 @@ export default ({ url, background="black", className="video" }) => {
       }}
     >
       <img
+        alt='image'
         style={{
           position: "absolute",
           top: 0,

@@ -1,7 +1,6 @@
 import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
-import back from "images/sobonsfumos/back1.png"
 
 /* framer-motion and useInView here are used to animate the sections in when we reach them in the viewport
  */

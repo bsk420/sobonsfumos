@@ -32,7 +32,6 @@ const Heading = styled.h1`
   }
 `;
 
-const Paragraph = tw.p`my-5 lg:my-8 text-sm lg:text-base font-medium text-gray-600 max-w-lg mx-auto lg:mx-0`;
 
 
 const SlantedBackground = styled.span`
