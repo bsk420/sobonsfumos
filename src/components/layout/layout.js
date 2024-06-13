@@ -66,21 +66,10 @@ const Layout = ({ children, country, regions, handleRegionChange }) => {
                   opacity: 0.5,
                 },
               }}
-              href="https://www.medusajs.com/"
+              href="https://www.stripe.com/"
             >
               <Flex sx={{ paddingTop: "10px", alignItems: "center" }}>
-                <Image src="/mark-grey.png" height={"15px"} width={"15px"} />
-                <Text
-                  sx={{
-                    ml: "5px",
-                    color: "#A3A3A3",
-                    fontWeight: 500,
-                    fontSize: "14px",
-                    lineHeight: "1",
-                  }}
-                >
-                  medusa{" "}
-                </Text>
+                <Image src="/stripe.png" height={"15px"} width={"31,48"} />
               </Flex>
             </Link>
             {regions?.length && (

@@ -29,7 +29,7 @@ const OrderConfirmation = ({ order }) => {
           We take care of it.
         </Flex>
         <Text variant="summary" sx={{ mt: "8px" }}>
-          Your order has been placed. We are working to get it settled. Check
+          Your order has been placed. <br />We are working to get it settled. Check
           your email for order confirmation.
         </Text>
       </Flex>
@@ -62,11 +62,6 @@ const OrderConfirmation = ({ order }) => {
               <span style={{ color: "#111827", fontWeight: 500 }}>
                 {order.email}
               </span>
-            </Text>
-          </Flex>
-          <Flex>
-            <Text variant="summary" sx={{ color: "#3B82F6", fontWeight: 500 }}>
-              Read confirmation in browser
             </Text>
           </Flex>
         </Flex>
