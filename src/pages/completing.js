@@ -28,7 +28,7 @@ const Completing = () => {
   return (
     <Layout>
       <Head>
-        <title>Checkout - SóBonsFumosTV</title>
+        <title>Checkout - SoBonsFumosTV</title>
         <meta name="description" content="Checkout at SóBonsFumosTV" />
       </Head>
       <Card variant="container" sx={{ backgroundColor: "#F3F4F6" }}>

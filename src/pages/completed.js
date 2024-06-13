@@ -6,7 +6,7 @@ const CompletedPage = () => {
   return (
     <>
       <Head>
-        <title>Checkout - SóBonsFumosTV</title>
+        <title>Checkout - SoBonsFumosTV</title>
         <meta name="description" content="Checkout at SóBonsFumosTV" />
       </Head>
       <CompletedLayout />
