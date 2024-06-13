@@ -6,8 +6,8 @@ const CompletedPage = () => {
   return (
     <>
       <Head>
-        <title>Order completed!</title>
-        <meta name="description" content="One-page checkout" />
+        <title>Checkout - SóBonsFumosTV</title>
+        <meta name="description" content="Checkout at SóBonsFumosTV" />
       </Head>
       <CompletedLayout />
     </>

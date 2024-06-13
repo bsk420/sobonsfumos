@@ -28,8 +28,8 @@ const Completing = () => {
   return (
     <Layout>
       <Head>
-        <title>Submitting order...</title>
-        <meta name="description" content="One-page checkout" />
+        <title>Checkout - SóBonsFumosTV</title>
+        <meta name="description" content="Checkout at SóBonsFumosTV" />
       </Head>
       <Card variant="container" sx={{ backgroundColor: "#F3F4F6" }}>
         <Flex
