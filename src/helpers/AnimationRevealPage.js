@@ -9,7 +9,7 @@ import useInView from "helpers/useInView";
 
 const StyledDiv = styled.div`
 ${tw`font-display min-h-screen text-secondary-500 p-8 overflow-hidden relative -mx-8 -mt-8 bg-center bg-no-repeat bg-cover`}
-background-image: url("https://cdn.discordapp.com/attachments/1141912139649536000/1249151094890958858/back1.png?ex=6666421d&is=6664f09d&hm=7d06c7a3fc8013f945628ebaa79dc3c7e002358c59bcad4ac81f12107735bcc3&");
+background-image: url(https://sbftv.com/background.png);
 `;
 
 function AnimationReveal({ disabled, children }) {
