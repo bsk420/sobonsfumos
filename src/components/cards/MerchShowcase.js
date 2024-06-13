@@ -58,7 +58,9 @@ export default ({
         title: "Hoodie - SóBonsFumos Edition",
         content: "",
         price: "$5.99",
-        url: "https://checkout.sbftv.com/hoodie-sbf-edition"
+        url: "https://checkout.sbftv.com/hoodie-sbf-edition",
+        outofstock: true,
+        stocktext: "Out of Stock"
       },
       {
         imageSrc:
@@ -66,7 +68,8 @@ export default ({
         title: "Scissors Kit - BELDI Edition",
         content: "",
         price: "$5.99",
-        url: "https://checkout.sbftv.com/scissors-kit-beldi-edition"
+        url: "https://checkout.sbftv.com/scissors-kit-beldi-edition",
+        stocktext: "Buy Now"
       },
       {
         imageSrc:
@@ -74,7 +77,8 @@ export default ({
         title: "Rolling Bowl - BELDI Edition",
         content: "",
         price: "$5.99",
-        url: "https://checkout.sbftv.com/rolling-bowl-beldi-edition"
+        url: "https://checkout.sbftv.com/rolling-bowl-beldi-edition",
+        stocktext: "Buy Now"
       },
       {
         imageSrc:
@@ -82,7 +86,8 @@ export default ({
         title: "UV Glass Stash Jar - SóBonsFumosTV Edition",
         content: "",
         price: "$5.99",
-        url: "https://checkout.sbftv.com/glass-stash-jar-sbftv-edition"
+        url: "https://checkout.sbftv.com/glass-stash-jar-sbftv-edition",
+        stocktext: "Buy Now"
       },
       {
         imageSrc:
@@ -90,7 +95,9 @@ export default ({
         title: "UV Glass Stash Jar - BELDI Edition",
         content: "",
         price: "$5.99",
-        url: "https://checkout.sbftv.com/glass-stash-jar-beldi-edition"
+        url: "https://checkout.sbftv.com/glass-stash-jar-beldi-edition",
+        outofstock: true,
+        stocktext: "Out of Stock"
       },
     ],
   }
@@ -153,7 +160,7 @@ export default ({
                       }}
                       transition={{ duration: 0.3 }}
                     >
-                      <CardButton>Buy Now</CardButton>
+                      <CardButton disabled={card.outofstock}>{card.stocktext}</CardButton>
                     </CardHoverOverlay>
                   </CardImageContainer>
                   <CardText>
