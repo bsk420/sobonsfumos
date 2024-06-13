@@ -45,7 +45,7 @@ export default () => {
   const cards = [
     {
       imageSrc:
-        "https://i.imgur.com/dvg4ziQ.png",
+        "/beldip.png",
       subtitle: "19 Nov 2023",
       title: "BELDI MOROCCO'S DOCUMENTARY",
       description:
