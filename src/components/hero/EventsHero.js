@@ -2,9 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 
-import Header, { NavLink, NavLinks, PrimaryLink, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
-import ResponsiveVideoEmbed from "../../helpers/Image.js";
-import Card from "images/sobonsfumos/contactcard.png"
+import Header, { NavLink, NavLinks, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
 
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none`}
@@ -41,12 +39,6 @@ const SlantedBackground = styled.span`
     ${tw`absolute inset-0 bg-gray-100 transform -skew-x-12 -z-10`}
   }
 `;
-const Image = styled(ResponsiveVideoEmbed)`
-  padding-bottom: 56.25% !important;
-  padding-top: 0px !important;
-  ${tw.img`rounded`}
-`;
-
 export default () => {
   const navLinks = [
     <NavLinks key={1}>
@@ -65,11 +57,6 @@ export default () => {
       <NavLink href="/merch">
         Merch
       </NavLink>
-    </NavLinks>,
-    <NavLinks key={2}>
-      <PrimaryLink href="https://buy.sbftv.com/">
-        Store
-      </PrimaryLink>
     </NavLinks>
   ];
 
@@ -88,9 +75,6 @@ export default () => {
             <br />
           </LeftColumn>
           <RightColumn>
-            <Image
-              url={Card}
-            />
           </RightColumn>
         </TwoColumn>
       </HeroContainer>

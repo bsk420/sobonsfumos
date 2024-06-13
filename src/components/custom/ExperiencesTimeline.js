@@ -44,7 +44,7 @@ export default () => {
   const cards = [
     {
       imageSrc:
-        "https://i.imgur.com/tSsqsk7.png",
+        "/first_date.png",
       subtitle: "24 July 2023 - 31 July 2023",
       title: "MOROCCO'S SBF EXPERIENCE GROUP 1",
       description:
@@ -54,7 +54,7 @@ export default () => {
 
     {
       imageSrc:
-        "https://i.imgur.com/2D8jzE6.png",
+        "/second_date.png",
       subtitle: "3 August 2023 - 10 August 2023",
       title: "MOROCCO'S SBF EXPERIENCE GROUP 2",
       description:
@@ -64,11 +64,11 @@ export default () => {
 
     {
       imageSrc:
-        "https://i.imgur.com/uavDfgc.png",
+        "/third_date.png",
       subtitle: "14 August 2023 - 21 August 2023",
       title: "MOROCCO'S SBF EXPERIENCE GROUP 3",
       description:
-      "The first group to experience the morocco's SBF's Experience. ",
+      "The third group to experience the morocco's SBF's Experience. ",
       url: ""
     }
   ];

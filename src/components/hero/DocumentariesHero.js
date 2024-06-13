@@ -2,7 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 
-import Header, { NavLink, NavLinks, PrimaryLink, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
+import Header, { NavLink, NavLinks, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
 import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
 
 const StyledHeader = styled(Header)`
@@ -68,11 +68,6 @@ export default () => {
       <NavLink href="/merch">
         Merch
       </NavLink>
-    </NavLinks>,
-    <NavLinks key={2}>
-      <PrimaryLink href="https://buy.sbftv.com/">
-        Store
-      </PrimaryLink>
     </NavLinks>
   ];
 

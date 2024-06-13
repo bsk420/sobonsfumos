@@ -3,9 +3,9 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
-import Header, { NavLink, NavLinks, PrimaryLink, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
-import ResponsiveVideoEmbed from "../../helpers/Image.js";
-import Card from "images/sobonsfumos/contactcard.png"
+import Header, { NavLink, NavLinks, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
+import Imagin from "../../helpers/Image.js";
+import ExperiencesImage from "images/sobonsfumos/contactcard.png"
 
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none`}
@@ -42,7 +42,7 @@ const SlantedBackground = styled.span`
   }
 `;
 
-const Image = styled(ResponsiveVideoEmbed)`
+const Image = styled(Imagin)`
   padding-bottom: 56.25% !important;
   padding-top: 0px !important;
   ${tw.img`rounded`}
@@ -67,11 +67,6 @@ export default () => {
       <NavLink href="/merch">
         Merch
       </NavLink>
-    </NavLinks>,
-    <NavLinks key={2}>
-      <PrimaryLink href="https://buy.sbftv.com/">
-        Store
-      </PrimaryLink>
     </NavLinks>
   ];
 
@@ -89,7 +84,7 @@ export default () => {
           </LeftColumn>
           <RightColumn>
             <Image
-              url={Card}
+              url={ExperiencesImage}
             />
           </RightColumn>
         </TwoColumn>

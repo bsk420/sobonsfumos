@@ -94,11 +94,8 @@ export default () => {
   /* Change this according to your needs */
   const cards = [
     {
-      imageSrc: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
-      title: "MOROCCO SBF'S EXPERIENCE 1PAX",
-      datesOne: "July 24th - July 31st",
-      datesTwo: "August 3rd - August 10th",
-      datesThree: "August 14th - August 21st",
+      imageSrc: "/1pax.png",
+      title: "MOROCCO'S EXPERIENCE 1PAX",
       description: "Enjoy the spoils of visiting moroccos guided by SBF himself to help you find the best experience in moroccos.",
       locationText: "Morocco",
       pricingText: "750€",
@@ -107,44 +104,35 @@ export default () => {
       url: "https://sbftv.com/itenerary.pdf"
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
-      title: "MOROCCO SBF'S EXPERIENCE 2PAX",
-      datesOne: "July 24th - July 31st",
-      datesTwo: "August 3rd - August 10th",
-      datesThree: "August 14th - August 21st",
+      imageSrc: "/2pax.png",
+      title: "MOROCCO'S EXPERIENCE 2PAX",
       description: "Enjoy the spoils of visiting moroccos guided by SBF himself to help you find the best experience in moroccos.",
       locationText: "Morocco",
       pricingText: "700€/pax",
       pax: 2,
-      totalText: "total: 1400€",
+      totalText: "",
       url: "https://sbftv.com/itenerary.pdf"
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
-      title: "MOROCCO SBF'S EXPERIENCE 4PAX",
-      datesOne: "July 24th - July 31st",
-      datesTwo: "August 3rd - August 10th",
-      datesThree: "August 14th - August 21st",
+      imageSrc: "/4pax.png",
+      title: "MOROCCO'S EXPERIENCE 4PAX",
       description: "Enjoy the spoils of visiting moroccos guided by SBF himself to help you find the best experience in moroccos.",
       locationText: "Morocco",
       pricingText: "680€/pax",
       pax: 4,
-      totalText: "total: 2720€",
+      totalText: "",
       url: "https://sbftv.com/itenerary.pdf"
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
-      title: "MOROCCO SBF'S EXPERIENCE 6PAX",
-      datesOne: "July 24th - July 31st",
-      datesTwo: "August 3rd - August 10th",
-      datesThree: "August 14th - August 21st",
+      imageSrc: "/2pax.png",
+      title: "MOROCCO'S EXPERIENCE 2PAX",
       description: "Enjoy the spoils of visiting moroccos guided by SBF himself to help you find the best experience in moroccos.",
       locationText: "Morocco",
       pricingText: "630€/pax",
       pax: 6,
-      totalText: "total: 3780€",
+      totalText: "",
       url: "https://sbftv.com/itenerary.pdf"
-    }  
+    }
   ]
 
   return (
@@ -193,6 +181,7 @@ export default () => {
                       <PriceIcon /><Text2>{card.pricingText}<br />{card.totalText}</Text2>
               </IconWithText>
               </Center>
+              <br />
 
               <PrimaryButton as="a" href={card.url}>View Itenerary</PrimaryButton>
             </Card>

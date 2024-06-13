@@ -60,11 +60,6 @@ export default () => {
       <NavLink href="/merch">
         Merch
       </NavLink>
-    </NavLinks>,
-    <NavLinks key={2}>
-      <PrimaryLink href="https://buy.sbftv.com/">
-        Store
-      </PrimaryLink>
     </NavLinks>
   ];
 

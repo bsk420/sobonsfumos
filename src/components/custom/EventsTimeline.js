@@ -4,9 +4,6 @@ import tw from "twin.macro";
 import { ReactComponent as SvgDotPatternIcon } from "../../images/dot-pattern.svg";
 import { SectionHeading as HeadingTitle } from "../misc/Headings.js";
 
-import image from "images/sobonsfumos/sbftv-icon.png";
-
-
 const Container = tw.div`relative`;
 
 const SingleColumn = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
@@ -65,7 +62,7 @@ export default () => {
 
     {
       imageSrc:
-        "https://i.imgur.com/RdKLbY4.png",
+        "/cogbeldi.png",
       subtitle: "Concluded",
       title: "COGNOSCITIVA x SBFTV",
       description:
@@ -75,7 +72,7 @@ export default () => {
 
     {
       imageSrc:
-        image,
+        "/expericesbf.png",
       subtitle: "24 July - 21 August",
       title: "MOROCCO'S SBF EXPERIENCE",
       description:
