@@ -34,10 +34,10 @@ export const PrimaryLink = tw(NavLink)`
 `;
 
 export const LogoLink = styled(NavLink)`
-  ${tw`flex items-center font-black border-b-0 text-2xl! ml-0!`};
+  ${tw`flex items-center font-black border-b-0 text-4xl! ml-0!`};
 
   img {
-    ${tw`w-10 mr-3`}
+    ${tw`w-20 mr-3`}
   }
 `;
 
@@ -86,8 +86,8 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
   const collapseBreakpointCss = collapseBreakPointCssMap[collapseBreakpointClass];
 
   const defaultLogoLink = (
-    <LogoLink href="/">
-      <img src={logo} alt="logo" />
+    <LogoLink href="/"  width={'1000px'}>
+      <img src={logo} alt="logo"/>
     </LogoLink>
   );
 
