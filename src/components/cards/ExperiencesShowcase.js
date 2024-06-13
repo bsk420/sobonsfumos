@@ -124,8 +124,8 @@ export default () => {
       url: "https://sbftv.com/itenerary.pdf"
     },
     {
-      imageSrc: "/2pax.png",
-      title: "MOROCCO'S EXPERIENCE 2PAX",
+      imageSrc: "/6pax.png",
+      title: "MOROCCO'S EXPERIENCE 6PAX",
       description: "Enjoy the spoils of visiting moroccos guided by SBF himself to help you find the best experience in moroccos.",
       locationText: "Morocco",
       pricingText: "630€/pax",
