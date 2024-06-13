@@ -88,7 +88,9 @@ export default () => {
             </Heading>
           </LeftColumn>
           <RightColumn>
-            <Image src={Card}/>
+            <Image
+              url={Card}
+            />
           </RightColumn>
         </TwoColumn>
       </HeroContainer>

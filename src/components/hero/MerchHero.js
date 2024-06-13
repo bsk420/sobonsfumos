@@ -76,24 +76,26 @@ export default () => {
 
   return (
     <>
-    <Container>
-      <HeroContainer>
-        <StyledHeader links={navLinks} />
-        <TwoColumn>
-          <LeftColumn>
-            <Heading>
-              <SlantedBackground>OUR</SlantedBackground>
+      <Container>
+        <HeroContainer>
+          <StyledHeader links={navLinks} />
+          <TwoColumn>
+            <LeftColumn>
+              <Heading>
+                <SlantedBackground>OUR</SlantedBackground>
+                <br />
+                <span>MERCH</span>
+              </Heading>
               <br />
-              <span>MERCH</span>
-            </Heading>
-            <br />
-          </LeftColumn>
-          <RightColumn>
-            <Image src={MerchImage}/>
-          </RightColumn>
-        </TwoColumn>
-      </HeroContainer>
-    </Container>
+            </LeftColumn>
+            <RightColumn>
+              <Image
+                url={Card}
+              />
+            </RightColumn>
+          </TwoColumn>
+        </HeroContainer>
+      </Container>
     </>
   );
 };
