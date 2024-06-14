@@ -43,7 +43,7 @@ const PaymentForm = ({ session, handleSubmit, setLoading }) => {
         elements,
         clientSecret,
         confirmParams: {
-          return_url: 'https://example.com/order/123/complete',
+          return_url: process.env.NEXT_PUBLIC_MEDUSA_CHECKOUT_URL + '/completing?cid=' + cart.id,
           shipping: {
             address: {
               city: shipping_address.city,
