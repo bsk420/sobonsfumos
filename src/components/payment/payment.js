@@ -7,6 +7,8 @@ import PaymentForm from "./payment-form"
 const STRIPE_KEY = process.env.NEXT_PUBLIC_STRIPE_API_KEY || ""
 const stripePromise = loadStripe(STRIPE_KEY)
 
+
+
 const Payment = ({ handleSubmit, setLoading }) => {
   const { cart } = useCart()
 
@@ -23,8 +25,11 @@ const Payment = ({ handleSubmit, setLoading }) => {
   }
 
   const options = {
-    client_secret: stripeSession.data.client_secret,
-  }
+    mode: 'payment',
+    currency: 'eur',
+    amount: cart.total,
+    client_secret: stripeSession.data.client_secret
+  };
 
   return (
     <Elements stripe={stripePromise} options={options}>
