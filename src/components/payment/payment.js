@@ -28,7 +28,6 @@ const Payment = ({ handleSubmit, setLoading }) => {
     mode: 'payment',
     currency: 'eur',
     amount: cart.total,
-    client_secret: stripeSession.data.client_secret
   };
 
   return (

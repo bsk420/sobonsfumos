@@ -22,6 +22,24 @@ const PaymentForm = ({ session, handleSubmit, setLoading }) => {
     billing_address.fullName = billing_address.firt_name + " " + billing_address.last_name;
   }
 
+  const handleError = async ({ e, submitError }) => {
+    e.preventDefault()
+    console.log("Just passing through")
+    const pi = error.payment_intent
+    if (submitError) {
+      setLoading(false)
+      if (pi && pi.status === "succeeded")
+        return handleSubmit()
+      setErrorMessage(error.message)
+      return
+    }
+
+    if (paymentIntent.status === "succeeded")
+      return handleSubmit()
+    return
+  }
+
+
   const handlePayment = async e => {
     e.preventDefault()
 
@@ -32,19 +50,36 @@ const PaymentForm = ({ session, handleSubmit, setLoading }) => {
     }
 
     // Trigger form validation and wallet collection
-    const {error: submitError} = await elements.submit();
+    const { error: submitError } = await elements.submit();
     if (submitError) {
       handleError(submitError);
+      console.log('jst to know')
       return;
     }
 
-    return stripe
-      .confirmPayment({
-        elements,
-        clientSecret,
-        confirmParams: {
-          return_url: process.env.NEXT_PUBLIC_MEDUSA_CHECKOUT_URL + '/completing?cid=' + cart.id,
-          shipping: {
+    // Use the clientSecret and Elements instance to confirm the setup
+    const { error } = await stripe.confirmPayment({
+      elements,
+      clientSecret,
+      confirmParams: {
+        return_url: process.env.NEXT_PUBLIC_MEDUSA_CHECKOUT_URL + '/completing?cid=' + cart.id,
+        shipping: {
+          address: {
+            city: shipping_address.city,
+            country: shipping_address.country,
+            line1: shipping_address.line1,
+            line2: shipping_address.line2,
+            postal_code: shipping_address.postal,
+          },
+          name: shipping_address.fullName,
+          carrier: 'CTT',
+          phone: shipping_address.phone,
+        },
+        payment_method_data: {
+          billing_details: {
+            name: shipping_address.fullName,
+            email: email,
+            phone: shipping_address.fullName,
             address: {
               city: shipping_address.city,
               country: shipping_address.country,
@@ -52,54 +87,17 @@ const PaymentForm = ({ session, handleSubmit, setLoading }) => {
               line2: shipping_address.line2,
               postal_code: shipping_address.postal,
             },
-            name: shipping_address.fullName,
-            carrier: 'CTT',
-            phone:  shipping_address.phone,
           },
-          payment_method_data: {
-            billing_details: {
-              name: shipping_address.fullName,
-              email: email,
-              phone: shipping_address.fullName,
-              address: {
-                city: shipping_address.city,
-                country: shipping_address.country,
-                line1: shipping_address.line1,
-                line2: shipping_address.line2,
-                postal_code: shipping_address.postal,
-              },
-            },
-          }
-          
-        },
-        // Uncomment below if you only want redirect for redirect-based payments
-        // redirect: "if_required",
-      })
-      .then(async ({ error, paymentIntent }) => {
-        if (error) {
-          setLoading(false)
-          const pi = error.payment_intent
-
-          if (
-            (pi && pi.status === "requires_capture") ||
-            (pi && pi.status === "succeeded")
-          ) {
-            return handleSubmit()
-          }
-
-          setErrorMessage(error.message)
-          return
         }
 
-        if (
-          (paymentIntent && paymentIntent.status === "requires_capture") ||
-          paymentIntent.status === "succeeded"
-        ) {
-          return handleSubmit()
-        }
+      },
+      // Uncomment below if you only want redirect for redirect-based payments
+      // redirect: "if_required",
+    });
 
-        return
-      })
+    if (error) {
+      handleError(error);
+    }
   }
 
   return (
