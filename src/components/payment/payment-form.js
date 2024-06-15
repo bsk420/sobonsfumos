@@ -3,7 +3,7 @@ import { Box, Button, Flex, Text } from "@theme-ui/components"
 import { useCart } from "medusa-react"
 import React, { useState } from "react"
 
-const PaymentForm = ({ session, handleSubmit, setLoading }) => {
+const PaymentForm = ({ setLoading }) => {
   const [errorMessage, setErrorMessage] = useState()
 
   const { cart } = useCart()
@@ -11,38 +11,29 @@ const PaymentForm = ({ session, handleSubmit, setLoading }) => {
   const elements = useElements()
   const clientSecret = cart.payment_session.data.client_secret
   const email = cart.email
-  const shipping_address = cart.shipping_address
-  const billing_address = cart.billing_address
+  let shipping_address = cart.shipping_address
+  let billing_address;
 
-  if (!billing_address) {
-    shipping_address.fullName = shipping_address.firt_name + " " + shipping_address.last_name;
-    billing_address = shipping_address;
-
+  if (!cart.billing_address) {
+    billing_address = cart.shipping_address
   } else {
-    billing_address.fullName = billing_address.firt_name + " " + billing_address.last_name;
+    billing_address = cart.billing_address
   }
+  
+  
 
-  const handleError = async ({ e, submitError }) => {
-    e.preventDefault()
-    console.log("Just passing through")
-    const pi = error.payment_intent
+  const handleError = async (submitError) => {
     if (submitError) {
       setLoading(false)
-      if (pi && pi.status === "succeeded")
-        return handleSubmit()
-      setErrorMessage(error.message)
+      setErrorMessage(submitError.message)
+      console.log(shipping_address)
       return
     }
-
-    if (paymentIntent.status === "succeeded")
-      return handleSubmit()
     return
   }
 
-
   const handlePayment = async e => {
     e.preventDefault()
-
     setLoading(true)
 
     if (!stripe || !elements) {
@@ -50,10 +41,9 @@ const PaymentForm = ({ session, handleSubmit, setLoading }) => {
     }
 
     // Trigger form validation and wallet collection
-    const { error: submitError } = await elements.submit();
+    const { error: submitError} = await elements.submit();
     if (submitError) {
       handleError(submitError);
-      console.log('jst to know')
       return;
     }
 
@@ -71,29 +61,31 @@ const PaymentForm = ({ session, handleSubmit, setLoading }) => {
             line2: shipping_address.line2,
             postal_code: shipping_address.postal,
           },
-          name: shipping_address.fullName,
+          name: shipping_address.first_name + ' ' + shipping_address.last_name,
           carrier: 'CTT',
           phone: shipping_address.phone,
         },
         payment_method_data: {
           billing_details: {
-            name: shipping_address.fullName,
+            name: billing_address.first_name + ' ' + billing_address.last_name,
             email: email,
-            phone: shipping_address.fullName,
+            phone: billing_address.phone,
             address: {
-              city: shipping_address.city,
-              country: shipping_address.country,
-              line1: shipping_address.line1,
-              line2: shipping_address.line2,
-              postal_code: shipping_address.postal,
+              city: billing_address.city,
+              country: billing_address.country,
+              line1: billing_address.line1,
+              line2: billing_address.line2,
+              postal_code: billing_address.postal,
             },
           },
         }
 
       },
       // Uncomment below if you only want redirect for redirect-based payments
-      // redirect: "if_required",
+      //redirect: "if_required",
     });
+
+
 
     if (error) {
       handleError(error);

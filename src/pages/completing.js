@@ -9,7 +9,9 @@ import Spinner from "../components/spinner/spinner"
 const Completing = () => {
   const router = useRouter()
 
-  const completeCartMutation = useCompleteCart(router.query.cid)
+  const {cid} = router.query
+ 
+  const completeCartMutation = useCompleteCart(cid)
 
   const completeCart = async () => {
     const { data, type } = await completeCartMutation.mutateAsync()
@@ -22,8 +24,11 @@ const Completing = () => {
   }
 
   useEffect(() => {
+    if(!cid) {
+      return;
+    }
     completeCart()
-  }, [])
+  }, [cid])
 
   return (
     <Layout>

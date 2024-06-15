@@ -1,19 +1,19 @@
 import Head from "next/head"
 import { useRouter } from "next/router"
-import * as React from "react"
+import React, { useEffect } from "react"
 import { client } from "../utils/client"
 
-const IndexPage = ({ product }) => {
+const IndexPage = () => {
   const router = useRouter()
+  const go = () => {
+    router.push(`https://sbftv.com`)
+  }
 
-  return (
-    <main>
-      <Head>
-        <title>Medusa Express</title>
-        <meta name="description" content="One-page checkout" />
-      </Head>
-    </main>
-  )
+  useEffect(() => {
+    go()
+  }, [])
+
+  return (<div></div>)
 }
 
 export async function getStaticProps({ params }) {

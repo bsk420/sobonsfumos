@@ -32,13 +32,6 @@ const Payment = ({ region, country, activeStep }) => {
 
   const [fullCountry, setFullCountry] = useState("")
 
-  const submitPayment = async () => {
-    // set Stripe as payment provider and navigate to confirmation page to complete order
-    pay.mutate(
-      { provider_id: "stripe" },
-      { onSuccess: () => router.push(`/completing?cid=${cart.id}`) }
-    )
-  }
 
   useEffect(() => {
     if (activeStep === "payment") {
@@ -93,7 +86,6 @@ const Payment = ({ region, country, activeStep }) => {
                   Payment method
                 </Text>
                 <PaymentDetails
-                  handleSubmit={submitPayment}
                   setLoading={setLoading}
                 />
               </Flex>

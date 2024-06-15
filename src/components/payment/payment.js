@@ -9,7 +9,7 @@ const stripePromise = loadStripe(STRIPE_KEY)
 
 
 
-const Payment = ({ handleSubmit, setLoading }) => {
+const Payment = ({ setLoading }) => {
   const { cart } = useCart()
 
   const stripeSession = useMemo(() => {
@@ -33,8 +33,6 @@ const Payment = ({ handleSubmit, setLoading }) => {
   return (
     <Elements stripe={stripePromise} options={options}>
       <PaymentForm
-        session={stripeSession}
-        handleSubmit={handleSubmit}
         setLoading={setLoading}
       />
     </Elements>
