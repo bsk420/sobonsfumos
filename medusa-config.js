@@ -68,11 +68,11 @@ const DATABASE_URL =
         api_key: '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',
         from: 'no-reply@sbftv.com',
         order_placed_template: 
-          'd-0481b4dda6204b7f8080e255dc20b6c6',
+          'd-a291f182bec14772a8611b25102cb553 ',
         order_canceled_template:
-          'd-0481b4dda6204b7f8080e255dc20b6c6',
+          'd-fe217fea27244216a93d462951abe249 ',
         order_shipped_template:
-          'd-0481b4dda6204b7f8080e255dc20b6c6',
+          'd-4226e36183474de896f130a71791a90a ',
       },
     },
   ];
