@@ -25,8 +25,8 @@ const OrderConfirmation = ({ order }) => {
         }}
       >
         <Flex sx={{ lineHeight: "36px" }}>
-          Thank you, {customerName}! <br />
-          We take care of it.
+          Thanks for your order, {customerName}! <br />
+          We i'll take care of it.
         </Flex>
         <Text variant="summary" sx={{ mt: "8px" }}>
           Your order has been placed. <br />We are working to get it settled. Check
