@@ -7,24 +7,6 @@ import Review from "../payment/review"
 import Total from "../payment/total"
 import Spinner from "../spinner/spinner"
 
-const DeliveryReview = ({ delivery, displayCountry }) => (
-  <Flex
-    sx={{
-      flexDirection: "column",
-      borderBottom: "1px solid #E5E7EB",
-      pb: "16px",
-      pt: "8px",
-    }}
-  >
-    <Text variant="subheading" sx={{ mb: "8px" }}>
-      Delivery
-    </Text>
-    <Text variant="summary">{delivery.address_1}</Text>
-    <Text variant="summary">{`${delivery.postal_code}, ${delivery.city}`}</Text>
-    <Text variant="summary">{displayCountry}</Text>
-  </Flex>
-)
-
 const Payment = ({ region, country, activeStep }) => {
   const [loading, setLoading] = useState(false)
   const router = useRouter()
@@ -72,10 +54,22 @@ const Payment = ({ region, country, activeStep }) => {
             <Text variant="header3">Payment</Text>
             <Box mt={"16px"}>
               <Review cart={cart} /> <Total cart={cart} />
-              <DeliveryReview
-                displayCountry={fullCountry}
-                delivery={cart.shipping_address}
-              />
+
+              <Flex
+                sx={{
+                  flexDirection: "column",
+                  borderBottom: "1px solid #E5E7EB",
+                  pb: "16px",
+                  pt: "8px",
+                }}
+              >
+                <Text variant="subheading" sx={{ mb: "8px" }}>
+                  Delivery
+                </Text>
+                <Text variant="summary">{cart.shipping_address.address_1}</Text>
+                <Text variant="summary">{`${cart.shipping_address.postal_code}, ${delivery.city}`}</Text>
+                <Text variant="summary">{fullCountry}</Text>
+              </Flex>
               <Flex
                 sx={{
                   flexDirection: "column",
