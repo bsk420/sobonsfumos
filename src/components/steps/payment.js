@@ -20,6 +20,7 @@ const Payment = ({ region, country, activeStep }) => {
       setFullCountry(
         region.countries.find(c => c.iso_2 === country).display_name
       )
+
     }
   }, [country, region, activeStep])
 
@@ -67,7 +68,7 @@ const Payment = ({ region, country, activeStep }) => {
                   Delivery
                 </Text>
                 <Text variant="summary">{cart.shipping_address.address_1}</Text>
-                <Text variant="summary">{`${cart.shipping_address.postal_code}, ${delivery.city}`}</Text>
+                <Text variant="summary">{`${cart.shipping_address.postal_code}, ${cart.shipping_address.city}`}</Text>
                 <Text variant="summary">{fullCountry}</Text>
               </Flex>
               <Flex
