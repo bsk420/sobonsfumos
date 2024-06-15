@@ -22,6 +22,7 @@ const Payment = ({ region, country, activeStep }) => {
       )
 
     }
+    console.log(cart.shipping_address)
   }, [country, region, activeStep])
 
   return (
