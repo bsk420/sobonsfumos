@@ -26,7 +26,6 @@ const PaymentForm = ({ setLoading }) => {
     if (submitError) {
       setLoading(false)
       setErrorMessage(submitError.message)
-      console.log(shipping_address)
       return
     }
     return
