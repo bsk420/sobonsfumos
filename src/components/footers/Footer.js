@@ -2,112 +2,97 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
+import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 
 import LogoImage from "../../images/sobonsfumos/sbftv-logo512.png";
-
+import { ReactComponent as YoutubeIcon } from "images/sobonsfumos/youtube-icon.svg";
 import { ReactComponent as InstagramIcon } from "images/sobonsfumos/instagram-icon.svg";
 
-import { ReactComponent as YoutubeIcon } from "images/sobonsfumos/youtube-icon.svg";
+const Container = tw.div`relative text-white -mb-8 -mx-8 px-8 py-20 lg:py-24`;
+const Content = tw.div`max-w-screen-xl mx-auto relative z-10`;
+const SixColumns = tw.div`flex flex-wrap text-center sm:text-left justify-center sm:justify-start md:justify-between -mt-12`;
 
-const Container = tw.div`relative text-gray-100 -mx-8 -mb-8 px-8`;
-const Content = tw.div`max-w-screen-xl mx-auto pt-16 pb-8`
-const FiveColumns = tw.div`flex flex-wrap justify-between`;
+const Column = tw.div`px-4 sm:px-0 sm:w-1/4 md:w-auto mt-12`;
 
-const Column = tw.div`w-1/2 md:w-1/5 mb-8 md:mb-0 text-sm sm:text-base text-center md:text-left`;
-const CompanyColumn = tw.div`text-center md:text-left mb-16 lg:mb-0 w-full lg:w-1/5`;
+const ColumnHeading = tw.h5`uppercase font-bold`;
 
-const ColumnHeading = tw.h5`font-bold uppercase`;
-
-const LinkList = tw.ul`mt-4 text-sm font-medium`;
+const LinkList = tw.ul`mt-6 text-sm font-medium`;
 const LinkListItem = tw.li`mt-3`;
-const Link = tw.a`border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-100 pb-1 transition duration-300`;
+const Link = tw.a`border-b-2 border-transparent hocus:border-gray-700 pb-1 transition duration-300`;
 
-const LogoContainer = tw.div`flex items-center justify-center lg:justify-start`;
+const SubscribeNewsletterColumn = tw(Column)`text-center lg:text-left w-full! lg:w-auto! mt-20 lg:mt-12`;
+const SubscribeNewsletterContainer = tw.div`max-w-sm mx-auto lg:mx-0 `;
+const SubscribeText = tw.p`mt-2 lg:mt-6 text-sm font-medium text-white`;
+const SubscribeForm = tw.form`mt-4 lg:mt-6 text-sm sm:flex max-w-xs sm:max-w-none mx-auto sm:mx-0`;
+const Input = tw.input`bg-gray-300 px-6 py-3 rounded sm:rounded-r-none border-2 sm:border-r-0 border-gray-400 hover:border-primary-500 focus:outline-none transition duration-300 w-full`;
+const SubscribeButton = tw(PrimaryButtonBase)`mt-4 sm:mt-0 w-full sm:w-auto rounded sm:rounded-l-none px-8 py-3`;
+
+const Divider = tw.div`my-16 border-b-2 border-gray-300 w-full`;
+
+const ThreeColRow = tw.div`flex flex-col md:flex-row items-center justify-between`;
+
+const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
 const LogoImg = tw.img`w-8`;
+const LogoText = tw.h5`ml-2 text-xl font-black tracking-wider text-gray-800`;
 
-const CompanyAddress = tw.p`mt-4 max-w-xs font-medium text-sm mx-auto lg:mx-0 lg:mr-4 leading-loose text-center lg:text-left`;
+const CopywrightNotice = tw.p`text-center text-sm sm:text-base mt-8 md:mt-0 font-medium text-gray-500`;
 
-
-const SocialLinksContainer = tw.div`mt-4 text-center lg:text-left`;
+const SocialLinksContainer = tw.div`mt-8 md:mt-0 flex`;
 const SocialLink = styled.a`
-  ${tw`cursor-pointer inline-block p-2 rounded-full bg-gray-100 text-gray-900 hover:bg-gray-500 transition duration-300 mr-4 last:mr-0`}
+  ${tw`cursor-pointer p-2 rounded-full bg-gray-900 text-white hover:bg-gray-700 transition duration-300 mr-4 last:mr-0`}
   svg {
     ${tw`w-4 h-4`}
   }
 `;
 
-const CopyrightAndCompanyInfoRow = tw.div`pb-0 text-sm font-normal flex flex-col sm:flex-row justify-between items-center`
-const CopyrightNotice = tw.div``
-const CompanyInfo = tw.div``
-
-
-
-const Divider = tw.div`my-8 border-b-2 border-white`
 export default () => {
   return (
     <Container>
       <Content>
-        <FiveColumns>
-          <CompanyColumn>
-            <ColumnHeading>About</ColumnHeading>
-            <br />
-            <LogoContainer>
-              <LogoImg src={LogoImage} />
-            </LogoContainer>
-            <CompanyAddress>
-              Tomás "SBF" Percheiro
-              Cannabis Journalist & Guide
-            </CompanyAddress>
-            <SocialLinksContainer>
-              <SocialLink href="https://instagram.com/so.bons.fumos">
-                <InstagramIcon />
-              </SocialLink>
-              <SocialLink href="https://instagram.com/sbf__tv">
-                <InstagramIcon />
-              </SocialLink>
-              <SocialLink href="https://www.youtube.com/channel/UCwOAIg3dFpZcmXKOuiBLCNw">
-                <YoutubeIcon />
-              </SocialLink>
-            </SocialLinksContainer>
-          </CompanyColumn>
+        <SixColumns>
+        <SubscribeNewsletterColumn>
+            <SubscribeNewsletterContainer>
+              <ColumnHeading>About</ColumnHeading>
+              <SubscribeText>
+                Tomás "SBF" Percheiro<br />
+                Cannabis Journalist & Guide
+              </SubscribeText>
+            </SubscribeNewsletterContainer>
+          </SubscribeNewsletterColumn>
           <Column>
-            <ColumnHeading></ColumnHeading>
-            <LinkList>
-
-            </LinkList>
           </Column>
           <Column>
-            <ColumnHeading></ColumnHeading>
-            <LinkList>
-            </LinkList>
           </Column>
           <Column>
-            <ColumnHeading></ColumnHeading>
-            <LinkList>
-            </LinkList>
           </Column>
-          <Column>
-            <ColumnHeading>Contact</ColumnHeading>
-            <br />
-            <br />
-            <br />
-            <br />
-            
-            <LinkList>
-              <LinkListItem>
-                  WhatsApp: +351 934 455 925
-              </LinkListItem>
-              <LinkListItem>
-                  Mail: <Link href="mailto:geral@sbftv.com">geral@sbftv.com</Link>
-              </LinkListItem>
-            </LinkList>
-          </Column>
-        </FiveColumns>
-        <Divider/>
-        <CopyrightAndCompanyInfoRow>
-          <CopyrightNotice>&copy; Copyright 2017, SBFTV.COM.</CopyrightNotice>
-          <CompanyInfo>All Rights Reserved</CompanyInfo>
-        </CopyrightAndCompanyInfoRow>
+          <SubscribeNewsletterColumn>
+            <SubscribeNewsletterContainer>
+              <ColumnHeading>Contact</ColumnHeading>
+              <SubscribeText>
+                WhatsApp: +351 934 455 925<br />
+                Email: contact@sbftv.com
+              </SubscribeText>
+            </SubscribeNewsletterContainer>
+          </SubscribeNewsletterColumn>
+        </SixColumns>
+        <Divider />
+        <ThreeColRow>
+          <LogoContainer>
+            <LogoImg src={LogoImage} />
+          </LogoContainer>
+          <CopywrightNotice>&copy; 2017 SóBonsFumosTV. All Rights Reserved.</CopywrightNotice>
+          <SocialLinksContainer>
+            <SocialLink href="https://instagram.com/so.bons.fumos">
+              <InstagramIcon style={{color: "white"}}/>
+            </SocialLink>
+            <SocialLink href="https://instagram.com/sbf__tv">
+              <InstagramIcon />
+            </SocialLink>
+            <SocialLink href="https://www.youtube.com/channel/UCwOAIg3dFpZcmXKOuiBLCNw">
+              <YoutubeIcon />
+            </SocialLink>
+          </SocialLinksContainer>
+        </ThreeColRow>
       </Content>
     </Container>
   );
