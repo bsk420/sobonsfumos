@@ -47,7 +47,7 @@ export default () => {
       imageSrc:
         "/beldip.png",
       subtitle: "19 Nov 2023",
-      title: "BELDI MOROCCO'S DOCUMENTARY",
+      title: "BELDI DOCUMENTARY",
       description:
         "The first of many documentaries by SBFTV. ",
       url: ""

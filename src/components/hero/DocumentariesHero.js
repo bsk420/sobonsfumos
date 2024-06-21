@@ -35,7 +35,7 @@ const Paragraph = tw.p`my-5 lg:my-8 text-lg lg:text-lg font-medium text-white ma
 
 
 const SlantedBackground = styled.span`
-  ${tw`relative text-black px-4 -mx-4 py-2`}
+  ${tw`relative text-black px-4 -mx-4 py-2 text-xl`}
   &::before {
     content: "";
     ${tw`absolute inset-0 bg-gray-100 transform -skew-x-12 -z-10`}
@@ -79,9 +79,10 @@ export default () => {
         <TwoColumn>
           <LeftColumn>
             <Heading>
-              <SlantedBackground>MOROCCO BELDI</SlantedBackground>
+              <SlantedBackground>MOROCCO</SlantedBackground>
               <br />
-              <span>DOCUMENTARY</span>
+              <span>BELDI
+              DOCUMENTARY</span>
             </Heading>
             <br />
             <Paragraph>UNVEIL MOROCCO's RICH CULTURE & HIDDEN HASHISH SCENE! DOCUMENTARY DEEP DIVES!</Paragraph>

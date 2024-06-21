@@ -6,18 +6,14 @@ import { css } from "styled-components/macro";
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { SectionDescription } from "components/misc/Typography.js";
 
-import defaultCardImage from "images/shield-icon.svg";
-
-import ShieldIconImage from "images/shield-icon.svg";
-
-const Container = tw.div`relative bg-black -mx-8 px-8 text-gray-100`;
+const Container = tw.div`relative -mx-8 px-8 text-gray-100`;
 
 const ThreeColumnContainer = styled.div`
   ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-lg mx-auto py-20 md:py-24`}
 `;
-const Subheading = tw(SubheadingBase)`mb-4 text-gray-100`;
+const Subheading = tw(SubheadingBase)`mb-4 text-white`;
 const Heading = tw(SectionHeading)`w-full`;
-const Description = tw(SectionDescription)`w-full text-center text-gray-300`;
+const Description = tw(SectionDescription)`w-full text-center text-white`;
 
 const VerticalSpacer = tw.div`mt-10 w-full`;
 
@@ -43,7 +39,7 @@ const Card = styled.div`
   }
 
   .description {
-    ${tw`mt-2 font-normal text-gray-400 leading-snug`}
+    ${tw`mt-2 text-xs text-white leading-snug`}
   }
 `;
 
@@ -63,63 +59,63 @@ export default ({
 
   const defaultCards = [
     {
-      imageSrc: ShieldIconImage,
+
       title: "2-Way Flight Tickets",
       description: "You'll get the tickets to come and go from Spain to Morocco ( Seville to Tetouan )."
     },
     {
-      imageSrc: ShieldIconImage,
+
       title: "Airport Transportation",
       description: "You'll get the private transportation from the airport to your Stay and back to the airport in Morocco."
     },
     {
-      imageSrc: ShieldIconImage,
+
       title: "7 Days of Experience with Accomodation",
       description: "You'll have seven days of experience planned by SBF himself, with accomodation for those days."
     },
 
     {
-      imageSrc: ShieldIconImage,
+
       title: "Traditional Farm and Plantations Tours",
       description: "You'll have some tours to the traditional farm and the plantations, with private transportion."
     },
     {
-      imageSrc: ShieldIconImage,
+
       title: "Akchour Waterfalls Tour",
       description: "You'll have a tour to the beautiful Akchour Waterfalls, with private transportation."
     },
     {
-      imageSrc: ShieldIconImage,
+
       title: "Chefchaouen Tour",
       description: "You'll have tour through Chefchaouen's architecture, history and craftsmanship."
     },
     {
-      imageSrc: ShieldIconImage,
+
       title: "Cannabic Processes",
       description: "You'll be able to observe and participate in all the cannabic processes available."
     },
     {
-      imageSrc: ShieldIconImage,
+
       title: "Welcoming Gifts",
       description: "You'll have some gifts waiting for you at your apartment upon arrival."
     },
     {
-      imageSrc: ShieldIconImage,
+
       title: "Craftsmanship Gifts",
       description: "You'll be given some gifts from the local craftsmanship."
     },
     {
-      imageSrc: ShieldIconImage,
+
       title: "Breakfest Meals",
       description: "You're meals will be covered, accordigly to the itenerary."
     },
     {
-      imageSrc: ShieldIconImage,
+
       title: "Lunch Meals",
       description: "You're meals will be covered, accordigly to the itenerary."
     },
     {
-      imageSrc: ShieldIconImage,
+
       title: "Dinner Meals",
       description: "You're meals will be covered, accordigly to the itenerary."
     },
@@ -137,9 +133,6 @@ export default ({
         {cards.map((card, i) => (
           <Column key={i}>
             <Card>
-              <span className="imageContainer">
-                <img src={card.imageSrc || defaultCardImage} alt="" />
-              </span>
               <span className="textContainer">
                 <span className="title">{card.title || "Fully Secure"}</span>
                 <p className="description">

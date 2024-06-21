@@ -31,16 +31,6 @@ const Heading = styled.h1`
 `;
 
 
-
-const SlantedBackground = styled.span`
-  ${tw`relative text-black px-4 -mx-4 py-2`}
-  &::before {
-    content: "";
-    ${tw`absolute inset-0 bg-gray-100 transform -skew-x-12 -z-10`}
-  }
-`;
-
-
 export default () => {
   const navLinks = [
     <NavLinks key={1}>
@@ -70,9 +60,7 @@ export default () => {
           <TwoColumn>
             <LeftColumn>
               <Heading>
-                <SlantedBackground>OUR</SlantedBackground>
-                <br />
-                <span>MERCH</span>
+                <span>OUR MERCH</span>
               </Heading>
               <br />
             </LeftColumn>

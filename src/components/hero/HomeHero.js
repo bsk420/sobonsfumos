@@ -28,17 +28,9 @@ const LeftColumn = tw.div`flex flex-col items-center lg:block`;
 const RightColumn = tw.div`w-full sm:w-5/6 lg:w-1/2 mt-16 lg:mt-0 lg:pl-8`;
 
 const Heading = styled.h1`
-  ${tw`text-3xl text-center lg:text-left sm:text-4xl lg:text-5xl xl:text-6xl font-black text-gray-100 leading-none`}
+  ${tw`text-4xl text-center lg:text-left sm:text-4xl lg:text-4xl xl:text-4xl font-black text-gray-100 leading-none`}
   span {
     ${tw`inline-block mt-2`}
-  }
-`;
-
-const SlantedBackground = styled.span`
-  ${tw`relative text-black px-4 -mx-4 py-2`}
-  &::before {
-    content: "";
-    ${tw`absolute inset-0 bg-gray-100 transform -skew-x-12 -z-10`}
   }
 `;
 
@@ -71,7 +63,7 @@ export default () => {
           <TwoColumn>
             <LeftColumn>
               <Heading>
-                <SlantedBackground>For the culture,</SlantedBackground>
+                For the culture,
                 <br />
                 By the culture.
               </Heading>

@@ -11,16 +11,6 @@ import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-7
 
 const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row`;
 const Header = tw(SectionHeading)``;
-const TabsControl = tw.div`flex flex-wrap px-2 py-2 rounded leading-none mt-12 xl:mt-0`;
-
-const TabControl = styled.div`
-  ${tw`cursor-pointer px-6 py-3 mt-2 sm:mt-0 sm:mr-2 last:mr-0 text-gray-600 font-medium rounded-sm transition duration-300 text-sm sm:text-base w-1/2 sm:w-auto text-center`}
-  &:hover {
-    ${tw`bg-gray-300 text-gray-700`}
-  }
-  ${props => props.active && tw`bg-primary-500! text-gray-100!`}
-  }
-`;
 
 const TabContent = tw(motion.div)`mt-6 flex flex-wrap sm:-mr-10 md:-mr-6 lg:-mr-12`;
 const CardContainer = tw.div`mt-10 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 sm:pr-10 md:pr-6 lg:pr-12`;
@@ -108,20 +98,13 @@ export default ({
    * To see what attributes are configurable of each object inside this array see the example above for "Starters".
    */
   const tabsKeys = Object.keys(tabs);
-  const [activeTab, setActiveTab] = useState(tabsKeys[0]);
+  const [activeTab] = useState(tabsKeys[0]);
 
   return (
     <Container>
       <ContentWithPaddingXl>
         <HeaderRow>
           <Header>{heading}</Header>
-          <TabsControl>
-            {Object.keys(tabs).map((tabName, index) => (
-              <TabControl key={index} active={activeTab === tabName} onClick={() => setActiveTab(tabName)}>
-                {tabName}
-              </TabControl>
-            ))}
-          </TabsControl>
         </HeaderRow>
 
         {tabsKeys.map((tabKey, index) => (
@@ -145,7 +128,9 @@ export default ({
           >
             {tabs[tabKey].map((card, index) => (
               <CardContainer key={index}>
-                <Card className="group" href={card.url} initial="rest" whileHover="hover" animate="rest">
+                
+
+                <Card className="group" href={card.outofstock ? '#' : card.url} initial="rest" whileHover="hover" animate="rest">
                   <CardImageContainer imageSrc={card.imageSrc}>
                     <CardHoverOverlay
                       variants={{
@@ -160,7 +145,7 @@ export default ({
                       }}
                       transition={{ duration: 0.3 }}
                     >
-                      <CardButton disabled={card.outofstock}>{card.stocktext}</CardButton>
+                      <CardButton  disabled={card.outofstock}>{card.outofstock ? 'Out of Stock' : 'Buy Now'}</CardButton>
                     </CardHoverOverlay>
                   </CardImageContainer>
                   <CardText>

@@ -4,8 +4,8 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
 import LogoImage from "../../images/sobonsfumos/sbftv-logo512.png";
-import { ReactComponent as YoutubeIcon } from "images/sobonsfumos/youtube-icon.svg";
-import { ReactComponent as InstagramIcon } from "images/sobonsfumos/instagram-icon.svg";
+import { ReactComponent as YoutubeIcon } from "images/sobonsfumos/youtube240.svg";
+import { ReactComponent as InstagramIcon } from "images/sobonsfumos/instagram240.svg";
 
 const Container = tw.div`relative text-white -mb-8 -mx-8 px-8 py-20 lg:py-24`;
 const Content = tw.div`max-w-screen-xl mx-auto relative z-10`;
@@ -24,13 +24,13 @@ const Divider = tw.div`my-16 border-b-2 border-gray-300 w-full`;
 const ThreeColRow = tw.div`flex flex-col md:flex-row items-center justify-between`;
 
 const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
-const LogoImg = tw.img`w-8`;
+const LogoImg = tw.img`w-24`;
 
 const CopywrightNotice = tw.p`text-center text-sm sm:text-base mt-8 md:mt-0 font-medium text-gray-500`;
 
 const SocialLinksContainer = tw.div`mt-8 md:mt-0 flex`;
 const SocialLink = styled.a`
-  ${tw`cursor-pointer p-2 rounded-full bg-gray-900 text-white hover:bg-gray-700 transition duration-300 mr-4 last:mr-0`}
+  ${tw`cursor-pointer p-2 rounded-full text-white hover:bg-gray-700 transition duration-300 mr-4 last:mr-0`}
   svg {
     ${tw`w-4 h-4`}
   }

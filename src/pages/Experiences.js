@@ -6,6 +6,7 @@ import ExperiencesHero from "components/hero/ExperiencesHero.js";
 import ExperiencesDescription from "components/custom/ExperiencesDescription.js";
 import ExperiencesShowcase from "components/cards/ExperiencesShowcase.js";
 import ExperiencesTimeline from "components/custom/ExperiencesTimeline.js";
+import ExperiencesFeatures from "components/features/ExperiencesFeatures.js";
 import Footer from "components/footers/Footer.js";
 
 
@@ -31,6 +32,7 @@ export default () => {
         <ExperiencesDescription />
         <ExperiencesTimeline />
         <ExperiencesShowcase />
+        <ExperiencesFeatures />
         <Footer />
       </Container>
     </AnimationRevealPage>

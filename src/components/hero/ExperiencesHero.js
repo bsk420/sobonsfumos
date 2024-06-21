@@ -34,14 +34,6 @@ const Heading = styled.h1`
   }
 `;
 
-const SlantedBackground = styled.span`
-  ${tw`relative text-black px-4 -mx-4 py-2`}
-  &::before {
-    content: "";
-    ${tw`absolute inset-0 bg-gray-100 transform -skew-x-12 -z-10`}
-  }
-`;
-
 const Image = styled(Imagin)`
   padding-bottom: 56.25% !important;
   padding-top: 0px !important;
@@ -79,7 +71,7 @@ export default () => {
             <Heading>
               <span>TOURISM </span>
               <br />
-              <SlantedBackground>EXPERIENCES</SlantedBackground>
+              <span>EXPERIENCES</span>
             </Heading>
           </LeftColumn>
           <RightColumn>

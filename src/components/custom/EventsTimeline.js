@@ -64,7 +64,7 @@ export default () => {
       imageSrc:
         "/cogbeldi.png",
       subtitle: "Concluded",
-      title: "COGNOSCITIVA x SBFTV",
+      title: "MORROCAN WAY",
       description:
         "At this event we presented the Beldi documentary for the third and last time.",
       url: "https://xceed.me/en/lisboa/event/fumos-secret-sesh-2--142648"
