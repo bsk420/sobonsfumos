@@ -47,7 +47,7 @@ export default ({
           "https://bucket-production-8051.up.railway.app/medusa-products/NMD00221-1718229000103.jpg",
         title: "Hoodie - SóBonsFumos Edition",
         content: "",
-        price: "$5.99",
+        // price: "$5.99",
         url: "https://instagram.com/sbf__tv",
         outofstock: true,
         stocktext: "Out of Stock"
@@ -57,7 +57,7 @@ export default ({
           "https://bucket-production-8051.up.railway.app/medusa-products/410232105_1763768647422434_4060383379592989974_n-1718227599651.jpg",
         title: "Scissors Kit - BELDI Edition",
         content: "",
-        price: "$5.99",
+        // price: "$5.99",
         url: "https://instagram.com/sbf__tv",
         stocktext: "Buy Now"
       },
@@ -66,25 +66,25 @@ export default ({
           "https://bucket-production-8051.up.railway.app/medusa-products/410343223_880975283669037_6382356238629676980_n-1718227350964.jpg",
         title: "Rolling Bowl - BELDI Edition",
         content: "",
-        price: "$5.99",
+        // price: "$5.99",
         url: "https://instagram.com/sbf__tv",
         stocktext: "Buy Now"
       },
-      {
-        imageSrc:
-          "https://bucket-production-8051.up.railway.app/medusa-products/410196165_370448245534470_3196287660758857099_n-1718226756338.jpg",
-        title: "UV Glass Stash Jar - SóBonsFumosTV Edition",
-        content: "",
-        price: "$5.99",
-        url: "https://instagram.com/sbf__tv",
-        stocktext: "Buy Now"
-      },
+      // {
+      //   imageSrc:
+      //     "https://bucket-production-8051.up.railway.app/medusa-products/410196165_370448245534470_3196287660758857099_n-1718226756338.jpg",
+      //   title: "UV Glass Stash Jar - SóBonsFumosTV Edition",
+      //   content: "",
+      //   price: "$5.99",
+      //   url: "https://instagram.com/sbf__tv",
+      //   stocktext: "Buy Now"
+      // },
       {
         imageSrc:
           "https://bucket-production-8051.up.railway.app/medusa-products/410196165_370448245534470_3196287660758857099_n-1718226756338.jpg",
         title: "UV Glass Stash Jar - BELDI Edition",
         content: "",
-        price: "$5.99",
+        // price: "$5.99",
         url: "https://instagram.com/sbf__tv",
         outofstock: true,
         stocktext: "Out of Stock"
@@ -151,7 +151,7 @@ export default ({
                   <CardText>
                     <CardTitle>{card.title}</CardTitle>
                     <CardContent>{card.content}</CardContent>
-                    <CardPrice>{card.price}</CardPrice>
+                    {/* <CardPrice>{card.price}</CardPrice> */}
                   </CardText>
                 </Card>
               </CardContainer>
