@@ -69,9 +69,9 @@ export default () => {
         <TwoColumn>
           <LeftColumn>
             <Heading>
-              <span>TOURISM </span>
+              <span>TOURS  </span>
               <br />
-              <span>EXPERIENCES</span>
+              <span>CANÁBICOS</span>
             </Heading>
           </LeftColumn>
           <RightColumn>

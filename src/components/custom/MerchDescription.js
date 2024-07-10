@@ -40,7 +40,7 @@ export default ({
       Our <span tw="text-white">Merch</span>
     </>
   ),
-  description = "Show your love for the culture with our merch. From threads to essentials, we offer everything you need to elevate your experience. Rep the brand, cultivate your story, and light up in style.",
+  description = "Com os nossos acessórios pretendemos juntar estética com utilidade, elevando as tuas SESH's para outros niveis. Feito para quem a ama a nossa planta",
   primaryButtonText = "Shop Now",
   primaryButtonUrl = "https://buy.sbftv.com",
   imageSrc = ShopImage,

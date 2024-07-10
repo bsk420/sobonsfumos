@@ -4,8 +4,8 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
 import LogoImage from "../../images/sobonsfumos/sbftv-logo512.png";
-import { ReactComponent as YoutubeIcon } from "images/sobonsfumos/youtube240.svg";
-import { ReactComponent as InstagramIcon } from "images/sobonsfumos/instagram240.svg";
+import YoutubeIcon from "images/sobonsfumos/icons/youtube94.png";
+import InstagramIcon from "images/sobonsfumos/icons/instagram94.png";
 
 const Container = tw.div`relative text-white -mb-8 -mx-8 px-8 py-20 lg:py-24`;
 const Content = tw.div`max-w-screen-xl mx-auto relative z-10`;
@@ -25,6 +25,9 @@ const ThreeColRow = tw.div`flex flex-col md:flex-row items-center justify-betwee
 
 const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
 const LogoImg = tw.img`w-24`;
+const SocialIcon = tw.img`w-10`;
+
+
 
 const CopywrightNotice = tw.p`text-center text-sm sm:text-base mt-8 md:mt-0 font-medium text-gray-500`;
 
@@ -74,13 +77,13 @@ export default () => {
           <CopywrightNotice>&copy; 2017 SóBonsFumosTV. All Rights Reserved.</CopywrightNotice>
           <SocialLinksContainer>
             <SocialLink href="https://instagram.com/so.bons.fumos">
-              <InstagramIcon style={{color: "white"}}/>
+            < SocialIcon src={InstagramIcon} />
             </SocialLink>
             <SocialLink href="https://instagram.com/sbf__tv">
-              <InstagramIcon />
+              <SocialIcon src={InstagramIcon} />
             </SocialLink>
             <SocialLink href="https://www.youtube.com/channel/UCwOAIg3dFpZcmXKOuiBLCNw">
-              <YoutubeIcon />
+              <SocialIcon src={YoutubeIcon} />
             </SocialLink>
           </SocialLinksContainer>
         </ThreeColRow>

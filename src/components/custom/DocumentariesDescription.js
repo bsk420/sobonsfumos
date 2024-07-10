@@ -33,10 +33,10 @@ const DecoratorBlob = styled(SvgDotPattern)(props => [
 export default ({
   heading = (
     <>
-      Our <span tw="text-white">Documentaries</span>
+      <span tw="text-white">Documentarios</span>
     </>
   ),
-  description = "We take you on a journey beyond the usual travel doc. We explore the soul of a place – the sizzling street food, the age-old crafts, the infectious local energy. But that's just the first puff. We then delve into the unique cannabis culture woven into the fabric of this vibrant community. Light up, tune in, and travel the world through a unique lens – one toke, one hidden gem, one unforgettable story at a time.",
+  description = "Com os nossos documentários pretendemos debruçar-nos sobre os locais no mundo onde a Canábis prosperou, desmistificando rumores, explicando a sua História e demonstrando a simbiose que se criou entre o Homem e a planta nesses mesmos Sitios.",
   imageSrc = DocumentariesLogo,
   imageCss = null,
   imageContainerCss = null,

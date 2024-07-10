@@ -18,7 +18,7 @@ const Description = tw.p`mt-4 text-center md:text-left text-2xl md:text-2xl lg:t
 
 
 export default ({
-  description = "More than a brand, it's a celebration of cannabis culture. We craft threads by the culture, for the culture. Rep your love for the plant with high-quality apparel that sparks conversation and elevates the experience. Join the movement.",
+  description = "O nosso objectivo é dar a oportunidade a todos de experienciar e conhecer as culturas onde a Cannabis esteve históricamente presente até aos dias de hoje, através de Documentários e Excursões Canábicas por esses mesmos sitios.",
   imageContainerCss = null,
   imageInsideDiv = true,
   textOnLeft = false

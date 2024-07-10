@@ -79,13 +79,12 @@ export default () => {
         <TwoColumn>
           <LeftColumn>
             <Heading>
-              <SlantedBackground>MOROCCO</SlantedBackground>
+              <SlantedBackground>MOROCCO DOCUMENTARY</SlantedBackground>
               <br />
-              <span>BELDI
-              DOCUMENTARY</span>
+              <span>"BELDI" (2023)</span>
             </Heading>
             <br />
-            <Paragraph>UNVEIL MOROCCO's RICH CULTURE & HIDDEN HASHISH SCENE! DOCUMENTARY DEEP DIVES!</Paragraph>
+            <Paragraph>Descobre tudo sobre a cultura canábica nas Famosas Montanhas Rif no Norte de Marrocos!</Paragraph>
           </LeftColumn>
           <RightColumn>
             <StyledResponsiveVideoEmbed

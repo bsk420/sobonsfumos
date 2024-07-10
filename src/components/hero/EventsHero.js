@@ -61,9 +61,7 @@ export default () => {
         <TwoColumn>
           <LeftColumn>
             <Heading>
-            <span>EVENTS</span>
-              <br />
-              <span>GATHERINGS</span>
+            <span>EVENTOS</span>
             </Heading>
             <br />
           </LeftColumn>

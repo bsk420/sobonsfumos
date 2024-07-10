@@ -60,7 +60,7 @@ export default () => {
           <TwoColumn>
             <LeftColumn>
               <Heading>
-                <span>OUR MERCH</span>
+                <span>MERCH</span>
               </Heading>
               <br />
             </LeftColumn>
