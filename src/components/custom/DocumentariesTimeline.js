@@ -23,6 +23,10 @@ const Image = styled.div(props => [
   `background-image: url("${props.imageSrc}");`,
   tw`rounded md:w-1/2 lg:w-5/12 xl:w-1/3 flex-shrink-0 h-80 md:h-144 bg-cover bg-center mx-4 sm:mx-8 md:mx-4 lg:mx-8`
 ]);
+const ImageLink = styled.a(props => [
+  <Image imageSrc={props.imageSrc} />,
+  tw`rounded md:w-1/2 lg:w-5/12 xl:w-1/3 flex-shrink-0 h-80 md:h-144 bg-cover bg-center mx-4 sm:mx-8 md:mx-4 lg:mx-8`
+]);
 const Details = tw.div`mt-4 md:mt-0 md:max-w-md mx-4 sm:mx-8 md:mx-4 lg:mx-8`;
 const Subtitle = tw.div`font-bold tracking-wide text-secondary-100`;
 const Title = tw.h4`text-3xl font-bold text-white`;
@@ -44,6 +48,7 @@ const SvgDotPattern4 = tw(
 export default () => {
   const cards = [
     {
+      imageTo: 'https://youtu.be/EY8ie9QF944',
       imageSrc:
         "/beldip.png",
       subtitle: "19 Nov 2023",
@@ -53,6 +58,8 @@ export default () => {
       url: ""
     },
   ];
+
+  
 
   return (
     <Container>
@@ -65,7 +72,8 @@ export default () => {
 
         <Content>
           {cards.map((card, i) => (
-            <Card key={i} reversed={i % 2 === 1}>
+            <a href={card.imageTo}>
+            <Card key={i} reversed={i % 2 === 1}  href='https://youtube.com'>
               <Image imageSrc={card.imageSrc} />
               <Details>
                 <Subtitle>{card.subtitle}</Subtitle>
@@ -73,6 +81,7 @@ export default () => {
                 <Description>{card.description}</Description>
               </Details>
             </Card>
+            </a>
           ))}
         </Content>
       </SingleColumn>

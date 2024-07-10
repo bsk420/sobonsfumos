@@ -48,7 +48,7 @@ export default ({
         title: "Hoodie - SóBonsFumos Edition",
         content: "",
         price: "$5.99",
-        url: "https://checkout.sbftv.com/hoodie-sbf-edition",
+        url: "https://instagram.com/sbf__tv",
         outofstock: true,
         stocktext: "Out of Stock"
       },
@@ -58,7 +58,7 @@ export default ({
         title: "Scissors Kit - BELDI Edition",
         content: "",
         price: "$5.99",
-        url: "https://checkout.sbftv.com/scissors-kit-beldi-edition",
+        url: "https://instagram.com/sbf__tv",
         stocktext: "Buy Now"
       },
       {
@@ -67,7 +67,7 @@ export default ({
         title: "Rolling Bowl - BELDI Edition",
         content: "",
         price: "$5.99",
-        url: "https://checkout.sbftv.com/rolling-bowl-beldi-edition",
+        url: "https://instagram.com/sbf__tv",
         stocktext: "Buy Now"
       },
       {
@@ -76,7 +76,7 @@ export default ({
         title: "UV Glass Stash Jar - SóBonsFumosTV Edition",
         content: "",
         price: "$5.99",
-        url: "https://checkout.sbftv.com/glass-stash-jar-sbftv-edition",
+        url: "https://instagram.com/sbf__tv",
         stocktext: "Buy Now"
       },
       {
@@ -85,7 +85,7 @@ export default ({
         title: "UV Glass Stash Jar - BELDI Edition",
         content: "",
         price: "$5.99",
-        url: "https://checkout.sbftv.com/glass-stash-jar-beldi-edition",
+        url: "https://instagram.com/sbf__tv",
         outofstock: true,
         stocktext: "Out of Stock"
       },
