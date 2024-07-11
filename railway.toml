@@ -9,4 +9,4 @@ nixPkgs = ["nodejs", "yarn"]
 cmds=["yarn install --frozen-lockfile"]
 
 [deploy]
-startCommand = "yarn run serve"
+startCommand = "serve -s build"
