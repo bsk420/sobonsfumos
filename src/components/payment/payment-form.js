@@ -21,7 +21,7 @@ const PaymentForm = ({ session, handleSubmit, setLoading }) => {
     billing_address = cart.billing_address
   }
   
-  const handleSubmit = async (event) => {
+  const handleSubmite = async (event) => {
     event.preventDefault();
   
     if (!stripe) {
@@ -83,7 +83,7 @@ const PaymentForm = ({ session, handleSubmit, setLoading }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmite}>
       {errorMessage && <Text sx={{ fontSize: "10px" }}>{errorMessage}</Text>}
       <Box variant="box.paymentField">
         <PaymentElement />
