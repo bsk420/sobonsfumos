@@ -36,7 +36,7 @@ export default ({
       <span tw="text-white">Documentarios</span>
     </>
   ),
-  description = "Com os nossos documentários pretendemos debruçar-nos sobre os locais no mundo onde a Canábis prosperou, desmistificando rumores, explicando a sua História e demonstrando a simbiose que se criou entre o Homem e a planta nesses mesmos Sitios.",
+  description = "Com os nossos documentários pretendemos debruçar-nos sobre os locais no mundo onde a Canábis prosperou, desmistificando rumores, explicando a sua História e demonstrando a simbiose que se criou entre o Homem e a planta nesses mesmos locais.",
   imageSrc = DocumentariesLogo,
   imageCss = null,
   imageContainerCss = null,

@@ -36,7 +36,7 @@ export default ({
       <span tw="text-white">EVENTOS      </span>
     </>
   ),
-  description = "Com os Nossos eventos pretendemos juntar pessoas com a mesma mentalidade e o mesmo amor pela nossa planta sagrada e tudo o que a envolve. Aprendendo uns com os outros, e uns sobre os outros, crescendo mais fortes como uma comunidade, trocando ideias, sabores e conhecimento. Tencionamos organizar eventos temáticos com segurança e liberdade, ajudando esta cultura a prosperar e elevar-se ainda mais.",
+  description = "Com os nossos eventos pretendemos juntar pessoas com a mesma mentalidade e o mesmo amor pela nossa planta sagrada e tudo o que a envolve. Aprendendo uns com os outros, e uns sobre os outros, crescendo mais fortes como uma comunidade, trocando ideias, sabores e conhecimento. Tencionamos organizar eventos temáticos com segurança e liberdade, ajudando esta cultura a prosperar e elevar-se ainda mais.",
   imageSrc = DocumentariesLogo,
   imageCss = null,
   imageContainerCss = null,

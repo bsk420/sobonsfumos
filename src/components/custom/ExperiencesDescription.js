@@ -36,7 +36,7 @@ const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:t
 export default ({
   heading = (
     <>
-      Our <span tw="text-white">Experiences</span>
+     <span tw="text-white">Excursões</span>
     </>
   ),
   description = "Com as nossas excursões, garantimos que vais poder experienciar em primeira mão, tudo o que viste nos nossos documentários. Temos o Orgulho de ser os primeiros em Portugal com este serviço exclusivo, oferecendo uma nova abordagem para explorar a cultura canábica pelo Mundo. Tomamos conta do voo, transportes, alojamento, refeições e quaisquer dores de cabeça, para que só te falte aproveitar e relaxar",

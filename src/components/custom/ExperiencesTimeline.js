@@ -25,7 +25,6 @@ const Image = styled.div(props => [
 const Details = tw.div`mt-4 md:mt-0 md:max-w-md mx-4 sm:mx-8 md:mx-4 lg:mx-8`;
 const Subtitle = tw.div`font-bold tracking-wide text-secondary-100`;
 const Title = tw.h4`text-3xl font-bold text-white`;
-const Description = tw.p`mt-2 text-lg leading-loose text-white`;
 
 const SvgDotPattern1 = tw(
   SvgDotPatternIcon
@@ -44,31 +43,25 @@ export default () => {
   const cards = [
     {
       imageSrc:
-        "/first_date.png",
-      subtitle: "24 July 2023 - 31 July 2023",
-      title: "MOROCCO'S SBF EXPERIENCE GROUP 1",
-      description:
-        "The first group to experience the morocco's SBF's Experience. ",
+        "https://i.imgur.com/a2ywHti.png",
+      subtitle: "24 Julho 2023 - 31 Julho 2023",
+      title: "MOROCCO'S SBF EXPERIENCE GRUPO 1",
       url: ""
     },
 
     {
       imageSrc:
-        "/second_date.png",
-      subtitle: "3 August 2023 - 10 August 2023",
-      title: "MOROCCO'S SBF EXPERIENCE GROUP 2",
-      description:
-      "The second group to experience the morocco's SBF's Experience. ",
+        "https://i.imgur.com/fJDOi7F.png",
+      subtitle: "3 Agosto 2023 - 10 Agosto 2023",
+      title: "MOROCCO'S SBF EXPERIENCE GRUPO 2",
       url: ""
     },
 
     {
       imageSrc:
-        "/third_date.png",
-      subtitle: "14 August 2023 - 21 August 2023",
-      title: "MOROCCO'S SBF EXPERIENCE GROUP 3",
-      description:
-      "The third group to experience the morocco's SBF's Experience. ",
+        "https://i.imgur.com/yvaTa5B.png",
+      subtitle: "14 Agosto 2023 - 21 Agosto 2023",
+      title: "MOROCCO'S SBF EXPERIENCE GRUPO 3",
       url: ""
     }
   ];
@@ -77,7 +70,7 @@ export default () => {
     <Container>
       <SingleColumn>
         <HeadingInfoContainer>
-          <HeadingTitle>Experiences</HeadingTitle>
+          <HeadingTitle>Tours Cannabicos</HeadingTitle>
         </HeadingInfoContainer>
 
         <Content>
@@ -87,7 +80,6 @@ export default () => {
               <Details>
                 <Subtitle>{card.subtitle}</Subtitle>
                 <Title>{card.title}</Title>
-                <Description>{card.description}</Description>
               </Details>
             </Card>
           ))}

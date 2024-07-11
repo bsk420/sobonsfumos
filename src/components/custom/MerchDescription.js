@@ -37,7 +37,7 @@ const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-lg lg:tex
 export default ({
   heading = (
     <>
-      Our <span tw="text-white">Merch</span>
+      <span tw="text-white">Merch</span>
     </>
   ),
   description = "Com os nossos acessórios pretendemos juntar estética com utilidade, elevando as tuas SESH's para outros niveis. Feito para quem a ama a nossa planta",

@@ -9,7 +9,7 @@ import useInView from "helpers/useInView";
 
 const StyledDiv = styled.div`
 ${tw`font-display min-h-screen text-secondary-500 p-8 overflow-hidden relative -mx-8 -mt-8 bg-center bg-no-repeat bg-cover`}
-background-image: url("/background.png");
+background-image: url("https://i.imgur.com/o6q5Nyk.png");
 `;
 
 function AnimationReveal({ disabled, children }) {

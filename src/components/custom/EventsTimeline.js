@@ -43,40 +43,40 @@ export default () => {
     {
       imageSrc:
         "https://i.imgur.com/dvg4ziQ.png",
-      subtitle: "Concluded",
+      subtitle: "Concluido",
       title: "Cannadouro 2023",
       description:
-        "At this event we premiered the Beldi documentary for the first time in Porto, Portugal.",
+        "Neste evento o documentario 'Beldi (2023)' foi exibido, pela primeira vez no Porto.",
       url: "https://cannadouro.pt/"
     },
 
     {
       imageSrc:
         "https://i.imgur.com/RdKLbY4.png",
-      subtitle: "Concluded",
+      subtitle: "Concluido",
       title: "FUMOS'S SECRET SESH",
       description:
-        "At this event we premiered the Beldi documentary for the second time this time in Lisbon, Portugal.",
+        "Neste evento o documentario 'Beldi (2023)' foi exibido, pela segunda vez em Lisboa.",
       url: "https://xceed.me/en/lisboa/event/fumos-secret-sesh-2--142648"
     },
 
     {
       imageSrc:
-        "/cogbeldi.png",
-      subtitle: "Concluded",
+        "https://i.imgur.com/NEv7Lys.png",
+      subtitle: "Concluido",
       title: "MORROCAN WAY",
       description:
-        "At this event we presented the Beldi documentary for the third and last time.",
+        "Neste evento o documentario 'Beldi (2023)' foi exibido, pela terceira e ultima vez.",
       url: "https://xceed.me/en/lisboa/event/fumos-secret-sesh-2--142648"
     },
 
     {
       imageSrc:
-        "/expericesbf.png",
-      subtitle: "24 July - 21 August",
+        "https://i.imgur.com/vWr4mtl.png",
+      subtitle: "24 Julho - 21 Agosto",
       title: "MOROCCO'S SBF EXPERIENCE",
       description:
-      "A new aproach at a tourist sighseeing.",
+      "Uma nova abordagem em experiencias turisticas.",
       url: ""
     }
   ];
@@ -85,7 +85,7 @@ export default () => {
     <Container>
       <SingleColumn>
         <HeadingInfoContainer>
-          <HeadingTitle>Events</HeadingTitle>
+          <HeadingTitle>Eventos</HeadingTitle>
         </HeadingInfoContainer>
 
         <Content>

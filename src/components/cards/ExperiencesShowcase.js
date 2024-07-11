@@ -4,7 +4,6 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { SectionHeading } from "components/misc/Headings";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons";
-import { ReactComponent as PriceIcon } from "feather-icons/dist/icons/dollar-sign.svg";
 
 import { ReactComponent as ChevronLeftIcon } from "feather-icons/dist/icons/chevron-left.svg";
 import { ReactComponent as ChevronRightIcon } from "feather-icons/dist/icons/chevron-right.svg";
@@ -44,7 +43,6 @@ const TitleReviewContainer = tw.div`flex flex-col sm:flex-row sm:justify-between
 const Title = tw.h5`text-2xl font-bold text-white`;
 
 
-const Description = tw.p`text-sm leading-loose mt-2 sm:mt-4 text-white`;
 
 const IconWithText = tw.div`flex items-center mr-6 my-2 sm:my-0`;
 const Text2 = tw.div``;
@@ -78,9 +76,8 @@ export default () => {
   /* Change this according to your needs */
   const cards = [
     {
-      imageSrc: "/1pax.png",
+      imageSrc: "https://i.imgur.com/jAJpDse.png",
       title: "MOROCCO'S EXPERIENCE 1PAX",
-      description: "Enjoy the spoils of visiting moroccos guided by SBF himself to help you find the best experience in moroccos.",
       locationText: "Morocco",
       pricingText: "750€",
       pax: 1,
@@ -88,9 +85,8 @@ export default () => {
       url: "https://sbftv.com/itenerary.pdf"
     },
     {
-      imageSrc: "/2pax.png",
+      imageSrc: "https://i.imgur.com/VVELNL7.png",
       title: "MOROCCO'S EXPERIENCE 2PAX",
-      description: "Enjoy the spoils of visiting moroccos guided by SBF himself to help you find the best experience in moroccos.",
       locationText: "Morocco",
       pricingText: "700€/pax",
       pax: 2,
@@ -98,9 +94,8 @@ export default () => {
       url: "https://sbftv.com/itenerary.pdf"
     },
     {
-      imageSrc: "/4pax.png",
+      imageSrc: "https://i.imgur.com/txd4VBR.png",
       title: "MOROCCO'S EXPERIENCE 4PAX",
-      description: "Enjoy the spoils of visiting moroccos guided by SBF himself to help you find the best experience in moroccos.",
       locationText: "Morocco",
       pricingText: "680€/pax",
       pax: 4,
@@ -108,9 +103,8 @@ export default () => {
       url: "https://sbftv.com/itenerary.pdf"
     },
     {
-      imageSrc: "/6pax.png",
+      imageSrc: "https://i.imgur.com/sEgMHXq.png",
       title: "MOROCCO'S EXPERIENCE 6PAX",
-      description: "Enjoy the spoils of visiting moroccos guided by SBF himself to help you find the best experience in moroccos.",
       locationText: "Morocco",
       pricingText: "630€/pax",
       pax: 6,
@@ -123,7 +117,7 @@ export default () => {
     <Container>
       <Content>
         <HeadingWithControl>
-          <Heading>Our Experiences</Heading>
+          <Heading>Tours</Heading>
           <Controls>
             <PrevButton onClick={sliderRef?.slickPrev}><ChevronLeftIcon/></PrevButton>
             <NextButton onClick={sliderRef?.slickNext}><ChevronRightIcon/></NextButton>
@@ -137,16 +131,15 @@ export default () => {
                 <TitleReviewContainer>
                   <Title>{card.title}</Title>
                 </TitleReviewContainer>
-                <Description>{card.description}</Description>
               </TextInfo>
               <Center>
               <IconWithText>
-                      <PriceIcon /> <Text2  >{card.pricingText}<br />{card.totalText}</Text2>
+                      <Text2  >{card.pricingText}<br />{card.totalText}</Text2>
               </IconWithText>
               </Center>
               <br />
 
-              <PrimaryButton as="a" href={card.url}>View Itenerary</PrimaryButton>
+              <PrimaryButton as="a" href={card.url}>Ver itinerário</PrimaryButton>
             </Card>
           ))}
         </CardSlider>

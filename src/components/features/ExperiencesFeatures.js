@@ -4,7 +4,6 @@ import tw from "twin.macro";
 //eslint-disable-next-line
 import { css } from "styled-components/macro";
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
-import { SectionDescription } from "components/misc/Typography.js";
 
 const Container = tw.div`relative -mx-8 px-8 text-gray-100`;
 
@@ -13,7 +12,6 @@ const ThreeColumnContainer = styled.div`
 `;
 const Subheading = tw(SubheadingBase)`mb-4 text-white`;
 const Heading = tw(SectionHeading)`w-full`;
-const Description = tw(SectionDescription)`w-full text-center text-white`;
 
 const VerticalSpacer = tw.div`mt-10 w-full`;
 
@@ -45,9 +43,8 @@ const Card = styled.div`
 
 export default ({
   cards = null,
-  heading = "Included in all Packages",
+  heading = "Incluido em todos os pacotes",
   subheading = "",
-  description = "This is included in all the packages below for the SBF's Experience in Moroccos."
 }) => {
   /*
    * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component) or you can directly pass this using the cards prop:
@@ -59,67 +56,55 @@ export default ({
 
   const defaultCards = [
     {
-
-      title: "2-Way Flight Tickets",
-      description: "You'll get the tickets to come and go from Spain to Morocco ( Seville to Tetouan )."
+      title: "Bilhetes de ida e volta", // 2-Way Flight Tickets
+      description: "Receberás os bilhetes de ida e volta de Espanha para Marrocos (Sevilha para Tetuã).", // You'll get the tickets to come and go from Spain to Morocco ( Seville to Tetouan ).
     },
     {
-
-      title: "Airport Transportation",
-      description: "You'll get the private transportation from the airport to your Stay and back to the airport in Morocco."
+      title: "Transporte do Aeroporto", // Airport Transportation
+      description: "Terás transporte particular do aeroporto para o alojamento e de volta para o aeroporto em Marrocos.", // You'll get the private transportation from the airport to your Stay and back to the airport in Morocco.
     },
     {
-
-      title: "7 Days of Experience with Accomodation",
-      description: "You'll have seven days of experience planned by SBF himself, with accomodation for those days."
-    },
-
-    {
-
-      title: "Traditional Farm and Plantations Tours",
-      description: "You'll have some tours to the traditional farm and the plantations, with private transportion."
+      title: "7 dias de experiência com alojamento", // 7 Days of Experience with Accomodation
+      description: "Sete dias de experiência planeados pelo próprio SBF, com alojamento para esses dias.", // You'll have seven days of experience planned by SBF himself, with accomodation for those days.
     },
     {
-
-      title: "Akchour Waterfalls Tour",
-      description: "You'll have a tour to the beautiful Akchour Waterfalls, with private transportation."
+      title: "Passeios por fazendas tradicionais e plantações", // Traditional Farm and Plantations Tours
+      description: "Terás alguns passeios por fazendas tradicionais e pelas plantações, com transporte particular.", // You'll have some tours to the traditional farm and the plantations, with private transportion.
     },
     {
-
-      title: "Chefchaouen Tour",
-      description: "You'll have tour through Chefchaouen's architecture, history and craftsmanship."
+      title: "Passeio pelas Cascatas de Akchour", // Akchour Waterfalls Tour
+      description: "Terás um passeio pelas belas Cascatas de Akchour, com transporte particular.", // You'll have a tour to the beautiful Akchour Waterfalls, with private transportation.
     },
     {
-
-      title: "Cannabic Processes",
-      description: "You'll be able to observe and participate in all the cannabic processes available."
+      title: "Passeio por Chefchaouen", // Chefchaouen Tour
+      description: "Terás um passeio pela arquitetura, história e artesanato de Chefchaouen.", // You'll have tour through Chefchaouen's architecture, history and craftsmanship.
     },
     {
-
-      title: "Welcoming Gifts",
-      description: "You'll have some gifts waiting for you at your apartment upon arrival."
+      title: "Processos Canábicos", // Cannabic Processes
+      description: "Poderás observar e participar em todos os processos canábicos disponíveis.", // You'll be able to observe and participate in all the cannabic processes available.
     },
     {
-
-      title: "Craftsmanship Gifts",
-      description: "You'll be given some gifts from the local craftsmanship."
+      title: "Presentes de boas-vindas", // Welcoming Gifts
+      description: "Terá alguns presentes a tua espera no apartamento na chegada.", // You'll have some gifts waiting for you at your apartment upon arrival.
     },
     {
-
-      title: "Breakfest Meals",
-      description: "You're meals will be covered, accordigly to the itenerary."
+      title: "Presentes Artesanais", // Craftsmanship Gifts
+      description: "Receberá alguns presentes do artesanato local.", // You'll be given some gifts from the local craftsmanship.
     },
     {
-
-      title: "Lunch Meals",
-      description: "You're meals will be covered, accordigly to the itenerary."
+      title: "Café da manhã", // Breakfest Meals
+      description: "Refeições estarão cobertas, de acordo com o itinerário.", // You're meals will be covered, accordigly to the itenerary.
     },
     {
-
-      title: "Dinner Meals",
-      description: "You're meals will be covered, accordigly to the itenerary."
+      title: "Almoço", // Lunch Meals
+      description: "Refeições estarão cobertas, de acordo com o itinerário.", // You're meals will be covered, accordigly to the itenerary.
+    },
+    {
+      title: "Jantar", // Dinner Meals
+      description: "Refeições estarão cobertas, de acordo com o itinerário.", // You're meals will be covered, accordigly to the itenerary.
     },
   ];
+  
 
   if (!cards) cards = defaultCards;
 
@@ -128,15 +113,14 @@ export default ({
       <ThreeColumnContainer>
         {subheading && <Subheading>{subheading}</Subheading>}
         <Heading>{heading}</Heading>
-        {description && <Description>{description}</Description>}
         <VerticalSpacer />
         {cards.map((card, i) => (
           <Column key={i}>
             <Card>
               <span className="textContainer">
-                <span className="title">{card.title || "Fully Secure"}</span>
+                <span className="title">{card.title}</span>
                 <p className="description">
-                  {card.description || "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud."}
+                  {card.description}
                 </p>
               </span>
             </Card>

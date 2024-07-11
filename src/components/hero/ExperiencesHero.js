@@ -3,7 +3,7 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
-import Header, { NavLink, NavLinks, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
+import Header, { NavLink, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
 import Imagin from "../../helpers/Image.js";
 import ExperiencesImage from "images/sobonsfumos/contactcard.png"
 
@@ -42,36 +42,16 @@ const Image = styled(Imagin)`
 
 
 export default () => {
-  const navLinks = [
-    <NavLinks key={1}>
-      <NavLink href="/">
-        Home
-      </NavLink>
-      <NavLink href="/documentaries" active>
-        Documentaries
-      </NavLink>
-      <NavLink href="/experiences">
-        Experiences
-      </NavLink>
-      <NavLink href="/events">
-        Events
-      </NavLink>
-      <NavLink href="/merch">
-        Merch
-      </NavLink>
-    </NavLinks>
-  ];
-
   return (
     <Container>
       <HeroContainer>
-        <StyledHeader links={navLinks} />
+        <StyledHeader/>
         <TwoColumn>
           <LeftColumn>
             <Heading>
               <span>TOURS  </span>
               <br />
-              <span>CANÁBICOS</span>
+              <span>CANABICOS</span>
             </Heading>
           </LeftColumn>
           <RightColumn>

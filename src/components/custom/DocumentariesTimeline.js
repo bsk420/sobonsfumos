@@ -46,11 +46,11 @@ export default () => {
     {
       imageTo: 'https://youtu.be/EY8ie9QF944',
       imageSrc:
-        "/beldip.png",
+        "https://i.imgur.com/xROYaFv.png",
       subtitle: "19 Nov 2023",
-      title: "BELDI DOCUMENTARY",
+      title: "BELDI (2023)",
       description:
-        "The first of many documentaries by SBFTV. ",
+        "O primeiro de muitos documentários da SBFTV. ",
       url: ""
     },
   ];
@@ -61,7 +61,7 @@ export default () => {
     <Container>
       <SingleColumn>
         <HeadingInfoContainer>
-          <HeadingTitle>Documentaries</HeadingTitle>
+          <HeadingTitle>Documentarios</HeadingTitle>
           <HeadingDescription>
           </HeadingDescription>
         </HeadingInfoContainer>

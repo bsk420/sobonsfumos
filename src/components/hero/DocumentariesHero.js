@@ -2,7 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 
-import Header, { NavLink, NavLinks, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
+import Header, { NavLink, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
 import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
 
 const StyledHeader = styled(Header)`
@@ -51,31 +51,11 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
 `;
 
 export default () => {
-  const navLinks = [
-    <NavLinks key={1}>
-      <NavLink href="/">
-        Home
-      </NavLink>
-      <NavLink href="/documentaries" active>
-        Documentaries
-      </NavLink>
-      <NavLink href="/experiences">
-        Experiences
-      </NavLink>
-      <NavLink href="/events">
-        Events
-      </NavLink>
-      <NavLink href="/merch">
-        Merch
-      </NavLink>
-    </NavLinks>
-  ];
-
   return (
     <>
     <Container>
       <HeroContainer>
-        <StyledHeader links={navLinks} />
+        <StyledHeader />
         <TwoColumn>
           <LeftColumn>
             <Heading>
@@ -84,7 +64,7 @@ export default () => {
               <span>"BELDI" (2023)</span>
             </Heading>
             <br />
-            <Paragraph>Descobre tudo sobre a cultura canábica nas Famosas Montanhas Rif no Norte de Marrocos!</Paragraph>
+            <Paragraph>Descobre tudo sobre a cultura canábica nas famosas Montanhas Rif no Norte de Marrocos!</Paragraph>
           </LeftColumn>
           <RightColumn>
             <StyledResponsiveVideoEmbed

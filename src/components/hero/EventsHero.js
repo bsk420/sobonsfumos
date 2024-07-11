@@ -2,7 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 
-import Header, { NavLink, NavLinks, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
+import Header, { NavLink, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
 
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none`}
@@ -33,31 +33,11 @@ const Heading = styled.h1`
 
 
 export default () => {
-  const navLinks = [
-    <NavLinks key={1}>
-      <NavLink href="/">
-        Home
-      </NavLink>
-      <NavLink href="/documentaries" active>
-        Documentaries
-      </NavLink>
-      <NavLink href="/experiences">
-        Experiences
-      </NavLink>
-      <NavLink href="/events">
-        Events
-      </NavLink>
-      <NavLink href="/merch">
-        Merch
-      </NavLink>
-    </NavLinks>
-  ];
-
   return (
     <>
     <Container>
       <HeroContainer>
-        <StyledHeader links={navLinks} />
+        <StyledHeader />
         <TwoColumn>
           <LeftColumn>
             <Heading>
