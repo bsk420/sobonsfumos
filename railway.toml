@@ -1,0 +1,12 @@
+[build]
+builder = "NIXPACKS"
+buildCommand = "yarn cache clean && yarn run build"
+
+[build.nixpacksPlan.phases.setup]
+nixPkgs = ["nodejs", "yarn"]
+
+[build.nixpacksPlan.phases.install]
+cmds=["yarn install --frozen-lockfile"]
+
+[deploy]
+startCommand = "yarn run start"
