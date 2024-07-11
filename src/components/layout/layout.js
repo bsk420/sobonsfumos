@@ -48,41 +48,6 @@ const Layout = ({ children, country, regions, handleRegionChange }) => {
               justifyContent: "center",
             }}
           >
-            <Text
-              sx={{
-                fontWeight: "500",
-                fontSize: "10px",
-                color: "#A3A3A3",
-                letterSpacing: "4px",
-              }}
-            >
-              Powered by
-            </Text>
-            <Link
-              sx={{
-                textDecoration: "none",
-                color: "medusa100",
-                "& image": {
-                  opacity: 0.5,
-                },
-              }}
-              href="https://www.medusajs.com/"
-            >
-              <Flex sx={{ paddingTop: "10px", alignItems: "center" }}>
-                <Image src="/mark-grey.png" height={"15px"} width={"15px"} />
-                <Text
-                  sx={{
-                    ml: "5px",
-                    color: "#A3A3A3",
-                    fontWeight: 500,
-                    fontSize: "14px",
-                    lineHeight: "1",
-                  }}
-                >
-                  medusa{" "}
-                </Text>
-              </Flex>
-            </Link>
             {regions?.length && (
               <RegionSelector
                 selected={country}

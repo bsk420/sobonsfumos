@@ -2,17 +2,15 @@
   "name": "medusa-express-nextjs",
   "version": "1.0.0",
   "private": true,
-  "description": "Medusa Express - One-page checkout",
-  "author": "Medusa Engineering",
+  "description": "SBFTV - Checkout",
+  "author": "bsk193",
   "keywords": [
     "nextjs"
   ],
   "scripts": {
     "dev": "next dev -p 8000",
     "build": "next build",
-    "start": "next start",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "start": "next start"
   },
   "dependencies": {
     "@emotion/react": "^11.7.1",
