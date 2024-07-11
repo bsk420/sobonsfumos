@@ -62,7 +62,7 @@ export default () => {
 
     {
       imageSrc:
-        "https://i.imgur.com/NEv7Lys.png",
+        "https://i.imgur.com/0Lf4Aee.png",
       subtitle: "Concluido",
       title: "MORROCAN WAY",
       description:
@@ -72,7 +72,7 @@ export default () => {
 
     {
       imageSrc:
-        "https://i.imgur.com/vWr4mtl.png",
+        "https://i.imgur.com/n0wFsSi.png",
       subtitle: "24 Julho - 21 Agosto",
       title: "MOROCCO'S SBF EXPERIENCE",
       description:

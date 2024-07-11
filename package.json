@@ -24,6 +24,7 @@
     "twin.macro": "^3.0.0-rc.4"
   },
   "scripts": {
+    "start": "set PORT=2095 && react-scripts start",
     "build": "react-scripts build",
     "serve": "serve -s build -l 4000"
   },

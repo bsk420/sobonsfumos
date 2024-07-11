@@ -76,7 +76,7 @@ export default () => {
   /* Change this according to your needs */
   const cards = [
     {
-      imageSrc: "https://i.imgur.com/jAJpDse.png",
+      imageSrc: "https://i.imgur.com/5vfrvRv.png",
       title: "MOROCCO'S EXPERIENCE 1PAX",
       locationText: "Morocco",
       pricingText: "750€",
@@ -85,7 +85,7 @@ export default () => {
       url: "https://sbftv.com/itenerary.pdf"
     },
     {
-      imageSrc: "https://i.imgur.com/VVELNL7.png",
+      imageSrc: "https://i.imgur.com/WXxWq7q.png",
       title: "MOROCCO'S EXPERIENCE 2PAX",
       locationText: "Morocco",
       pricingText: "700€/pax",
@@ -94,7 +94,7 @@ export default () => {
       url: "https://sbftv.com/itenerary.pdf"
     },
     {
-      imageSrc: "https://i.imgur.com/txd4VBR.png",
+      imageSrc: "https://i.imgur.com/m8aM4EV.png",
       title: "MOROCCO'S EXPERIENCE 4PAX",
       locationText: "Morocco",
       pricingText: "680€/pax",
@@ -103,7 +103,7 @@ export default () => {
       url: "https://sbftv.com/itenerary.pdf"
     },
     {
-      imageSrc: "https://i.imgur.com/sEgMHXq.png",
+      imageSrc: "https://i.imgur.com/rkkGK2H.png",
       title: "MOROCCO'S EXPERIENCE 6PAX",
       locationText: "Morocco",
       pricingText: "630€/pax",
