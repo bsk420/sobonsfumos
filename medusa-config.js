@@ -55,8 +55,8 @@ const DATABASE_URL =
     {
       resolve: `medusa-payment-stripe`,
       options: {
-        api_key: process.env.STRIPE_API_KEY,
-        webhook_secret: process.env.STRIPE_WEBHOOK_SECRET,
+        api_key: process.env.NODE_ENV !== "development" ? process.env.STRIPE_API_KEY : process.env.DEV_STRIPE_API_KEY,
+        webhook_secret: process.env.NODE_ENV !== "development" ? process.env.STRIPE_WEBHOOK_SECRET : process.env.DEV_STRIPE_WEBHOOK_SECRET,
         capture: true,
         automatic_payment_methods: true,
         payment_description: 'SBFTV'
@@ -101,7 +101,12 @@ const projectConfig = {
   worker_mode: process.env.MEDUSA_WORKER_MODE,
   database_url: DATABASE_URL,
   redis_url: REDIS_URL,
-  database_extra: { ssl: { rejectUnauthorized: false } },
+  database_extra: process.env.NODE_ENV !== "development" ?
+  {
+    ssl: {
+      rejectUnauthorized: false,
+    },
+  } : {},
   database_driver_options: { connection: { ssl: { rejectUnauthorized: false } } }
 };
 
