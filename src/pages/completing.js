@@ -8,10 +8,8 @@ import Spinner from "../components/spinner/spinner"
 
 const Completing = () => {
   const router = useRouter()
-  const {cid} = router.query
 
-
-  const completeCartMutation = useCompleteCart(cid)
+  const completeCartMutation = useCompleteCart(router.query.cid)
 
   const completeCart = async () => {
     const { data, type } = await completeCartMutation.mutateAsync()
@@ -24,17 +22,14 @@ const Completing = () => {
   }
 
   useEffect(() => {
-    if(!cid) {
-      return;
-    }
     completeCart()
-  }, [cid, completeCart])
+  }, [])
 
   return (
     <Layout>
       <Head>
-        <title>Checkout - SoBonsFumosTV</title>
-        <meta name="description" content="Checkout at SóBonsFumosTV" />
+      <title>Checkout - SoBonsFumosTV</title>
+      <meta name="description" content="Checkout at SóBonsFumosTV" />
       </Head>
       <Card variant="container" sx={{ backgroundColor: "#F3F4F6" }}>
         <Flex

@@ -23,7 +23,7 @@ const Delivery = ({ formik, region, country, setLoading }) => {
         }}
         variant="subheading"
       >
-        Endereço de Entrega
+        Delivery address
       </Text>
       <>
         <Field
@@ -55,7 +55,7 @@ const Delivery = ({ formik, region, country, setLoading }) => {
         />
         <Field formik={formik} value={fullCountry} disabled={true} />
         <Text mt={4} as="h3" sx={{}} variant="subheading">
-          Método de Envio
+          Shipping method
         </Text>
         <SelectShipping
           formik={formik}

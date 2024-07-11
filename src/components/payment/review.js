@@ -41,12 +41,12 @@ const Review = ({ cart }) => {
           }}
         >
           <Text sx={{ marginBottom: "15px" }}>
-            <Text sx={{ color: "#B0B0B0" }}>Variante: </Text>
+            <Text sx={{ color: "#B0B0B0" }}>Size: </Text>
             {item.variant.title}
           </Text>
         </Flex>
         <Text sx={{ fontWeight: 300 }}>
-          <Text sx={{ color: "#B0B0B0" }}>Quantidade: </Text>
+          <Text sx={{ color: "#B0B0B0" }}>Quantity: </Text>
           {item.quantity}
         </Text>
       </Flex>

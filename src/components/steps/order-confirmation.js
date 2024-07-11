@@ -25,12 +25,12 @@ const OrderConfirmation = ({ order }) => {
         }}
       >
         <Flex sx={{ lineHeight: "36px" }}>
-          Obrigado!, {customerName}! <br />
-          Estamos a tratar do teu pedido.
+          Thank you, {customerName}! <br />
+          We'll take care of it.
         </Flex>
         <Text variant="summary" sx={{ mt: "8px" }}>
-          O teu pedido foi concluido com sucesso, estamos a tratar de o enviar.
-          Verifica o teu email para o email de confirmação.
+          Your order has been placed. We are working to get it settled. Check
+          your email for order confirmation.
         </Text>
       </Flex>
       <Flex my={3} pb={3} sx={{ flex: 1 }}>
@@ -42,7 +42,7 @@ const OrderConfirmation = ({ order }) => {
         >
           <Flex sx={{ mb: "8px" }}>
             <Text variant="summary" sx={{ mr: "5px" }}>
-              Numero do Pedido:
+              Order number:
             </Text>
             <Text variant="summary" sx={{ color: "#111827" }}>
               {order.display_id}
@@ -50,7 +50,7 @@ const OrderConfirmation = ({ order }) => {
           </Flex>
           <Flex sx={{ mb: "8px" }}>
             <Text variant="summary" sx={{ mr: "5px" }}>
-              Data:
+              Date:
             </Text>
             <Text variant="summary" sx={{ color: "#111827" }}>
               {moment(order.created_at).format("LLLL")}
@@ -58,13 +58,11 @@ const OrderConfirmation = ({ order }) => {
           </Flex>
           <Flex sx={{ mb: "24px" }}>
             <Text variant="summary" sx={{ mr: "5px" }}>
-              Enviamos o email de confirmacao para {" "}
+              We have sent an order confirmation to{" "}
               <span style={{ color: "#111827", fontWeight: 500 }}>
                 {order.email}
               </span>
             </Text>
-          </Flex>
-          <Flex>
           </Flex>
         </Flex>
       </Flex>

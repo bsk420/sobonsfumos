@@ -59,7 +59,7 @@ const Product = ({
           onClick={() => setActiveStep("product")}
           sx={triggerStyles}
         >
-          Produto
+          Product
           {cart?.id && (
             <Image src={"/check.png"} height={"11px"} width={"16px"} />
           )}

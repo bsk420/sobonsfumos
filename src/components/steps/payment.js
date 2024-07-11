@@ -17,7 +17,7 @@ const DeliveryReview = ({ delivery, displayCountry }) => (
     }}
   >
     <Text variant="subheading" sx={{ mb: "8px" }}>
-      Entrega
+      Delivery
     </Text>
     <Text variant="summary">{delivery.address_1}</Text>
     <Text variant="summary">{`${delivery.postal_code}, ${delivery.city}`}</Text>
@@ -30,6 +30,13 @@ const Payment = ({ region, country, activeStep }) => {
   const { cart, pay } = useCart()
 
   const [fullCountry, setFullCountry] = useState("")
+
+  const submitPayment = async () => {
+    // set Stripe as payment provider and navigate to confirmation page to complete order
+    pay.mutate(
+      { provider_id: "stripe" },
+    )
+  }
 
   useEffect(() => {
     if (activeStep === "payment") {
@@ -67,7 +74,7 @@ const Payment = ({ region, country, activeStep }) => {
                 <Spinner />
               </Flex>
             )}
-            <Text variant="header3">Pagamento</Text>
+            <Text variant="header3">Payment</Text>
             <Box mt={"16px"}>
               <Review cart={cart} /> <Total cart={cart} />
               <DeliveryReview
@@ -81,9 +88,10 @@ const Payment = ({ region, country, activeStep }) => {
                 }}
               >
                 <Text variant="subheading" sx={{ mb: "8px" }}>
-                  Método de Pagamento
+                  Payment method
                 </Text>
                 <PaymentDetails
+                  handleSubmit={submitPayment}
                   setLoading={setLoading}
                 />
               </Flex>
@@ -91,7 +99,7 @@ const Payment = ({ region, country, activeStep }) => {
           </Flex>
         </Card>
       ) : (
-        <Card variant="accordionTrigger">Pagamento</Card>
+        <Card variant="accordionTrigger">Payment</Card>
       )}
     </Flex>
   )

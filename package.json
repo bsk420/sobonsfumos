@@ -15,7 +15,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@emotion/react": "11.6.0",
+    "@emotion/react": "^11.7.1",
     "@medusajs/medusa-js": "^1.0.1-canary.3",
     "@stripe/react-stripe-js": "^1.7.0",
     "@stripe/stripe-js": "^1.22.0",

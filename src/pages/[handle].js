@@ -22,8 +22,8 @@ const ProductPage = ({ product, regions }) => {
         handleRegionChange={handleRegionChange}
       >
         <Head>
-          <title>{product.title} - SoBonsFumosTV</title>
-          <meta name="description" content={product?.description || ""} />
+        <title>{product.title} - SoBonsFumosTV</title>
+        <meta name="description" content={product?.description || ""} />
         </Head>
         <Steps
           product={product}

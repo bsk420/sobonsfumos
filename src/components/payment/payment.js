@@ -4,10 +4,10 @@ import { useCart } from "medusa-react"
 import React, { useMemo } from "react"
 import PaymentForm from "./payment-form"
 
-const STRIPE_KEY = process.env.NEXT_PUBLIC_STRIPE_API_KEY || ""
+const STRIPE_KEY = process.env.NODE_ENV !== "development" ? process.env.NEXT_PUBLIC_STRIPE_API_KEY : process.env.NEXT_PUBLIC_DEV_STRIPE_API_KEY
 const stripePromise = loadStripe(STRIPE_KEY)
 
-const Payment = ({ setLoading }) => {
+const Payment = ({ handleSubmit, setLoading }) => {
   const { cart } = useCart()
 
   const stripeSession = useMemo(() => {
@@ -30,6 +30,7 @@ const Payment = ({ setLoading }) => {
     <Elements stripe={stripePromise} options={options}>
       <PaymentForm
         session={stripeSession}
+        handleSubmit={handleSubmit}
         setLoading={setLoading}
       />
     </Elements>

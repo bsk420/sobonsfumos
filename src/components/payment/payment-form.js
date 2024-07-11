@@ -1,9 +1,9 @@
-import { Pay, useElements, useStripe } from "@stripe/react-stripe-js"
+import { PaymentElement, useElements, useStripe } from "@stripe/react-stripe-js"
 import { Box, Button, Flex, Text } from "@theme-ui/components"
 import { useCart } from "medusa-react"
 import React, { useState } from "react"
 
-const PaymentForm = ({ session, setLoading }) => {
+const PaymentForm = ({ session, handleSubmit, setLoading }) => {
   const [errorMessage, setErrorMessage] = useState()
 
   const { cart } = useCart()
@@ -86,10 +86,10 @@ const PaymentForm = ({ session, setLoading }) => {
     <form onSubmit={handleSubmit}>
       {errorMessage && <Text sx={{ fontSize: "10px" }}>{errorMessage}</Text>}
       <Box variant="box.paymentField">
-        <CardElement />
+        <PaymentElement />
       </Box>
       <Flex>
-        <Button variant="cta">Concluir</Button>
+        <Button variant="cta">Complete order</Button>
       </Flex>
     </form>
   )

@@ -144,7 +144,7 @@ const OptionSelector = ({ product }) => {
           fontSize: "0.75em",
         }}
       >
-        <Text sx={{ mb: "12px", fontWeight: "bold" }}>Quantidade</Text>
+        <Text sx={{ mb: "12px", fontWeight: "bold" }}>Quantity</Text>
         <Select
           defaultValue={quantity || 1}
           sx={{
