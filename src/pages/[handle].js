@@ -22,7 +22,7 @@ const ProductPage = ({ product, regions }) => {
         handleRegionChange={handleRegionChange}
       >
         <Head>
-          <title>Checkout - SoBonsFumosTV</title>
+          <title>{product.title} - SoBonsFumosTV</title>
           <meta name="description" content={product?.description || ""} />
         </Head>
         <Steps

@@ -13,14 +13,14 @@ const Contact = ({ formik, summarize = false }) => {
         }}
         variant="subheading"
       >
-        Contact
+        Contacto
       </Text>
       <FieldSplitter
         split="50/50"
         left={
           <Field
             formik={formik}
-            placeholder={"First name"}
+            placeholder={"Nome"}
             value={formik.values.contact.first_name}
             name={"first_name"}
             set={"contact"}
@@ -29,7 +29,7 @@ const Contact = ({ formik, summarize = false }) => {
         right={
           <Field
             formik={formik}
-            placeholder={"Last name"}
+            placeholder={"Apelidos"}
             value={formik.values.contact.last_name}
             name={"last_name"}
             set={"contact"}
@@ -45,7 +45,7 @@ const Contact = ({ formik, summarize = false }) => {
       />
       <Field
         formik={formik}
-        placeholder={"Phone number"}
+        placeholder={"Telémovel"}
         value={formik.values.contact.phone}
         name={"phone"}
         set={"contact"}

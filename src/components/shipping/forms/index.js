@@ -37,19 +37,19 @@ const Forms = ({ country, region, nextStep, setLoading }) => {
     },
     validationSchema: Yup.object({
       contact: Yup.object({
-        first_name: Yup.string().required("Required"),
-        last_name: Yup.string().required("Required"),
+        first_name: Yup.string().required("Obrigatorio"),
+        last_name: Yup.string().required("Obrigatorio"),
         email: Yup.string()
-          .email("Please provide a valid email address")
-          .required("Required"),
+          .email("Introduz um email valido.")
+          .required("Obrigatorio"),
         phone: Yup.string().optional(),
       }),
       delivery: Yup.object({
-        address_1: Yup.string().required("Required"),
-        postal_code: Yup.string().required("Required"),
-        city: Yup.string().required("Required"),
-        country_code: Yup.string().required("Required"),
-        shipping_option: Yup.string().required("Required"),
+        address_1: Yup.string().required("Obrigatorio"),
+        postal_code: Yup.string().required("Obrigatorio"),
+        city: Yup.string().required("Obrigatorio"),
+        country_code: Yup.string().required("Obrigatorio"),
+        shipping_option: Yup.string().required("Obrigatorio"),
       }),
     }),
     onSubmit: async values => {

@@ -1,14 +1,15 @@
-import { PaymentElement, useElements, useStripe } from "@stripe/react-stripe-js"
+import { Pay, useElements, useStripe } from "@stripe/react-stripe-js"
 import { Box, Button, Flex, Text } from "@theme-ui/components"
 import { useCart } from "medusa-react"
 import React, { useState } from "react"
 
-const PaymentForm = ({ setLoading }) => {
+const PaymentForm = ({ session, setLoading }) => {
   const [errorMessage, setErrorMessage] = useState()
 
   const { cart } = useCart()
   const stripe = useStripe()
   const elements = useElements()
+
   const clientSecret = cart.payment_session.data.client_secret
   const email = cart.email
   let shipping_address = cart.shipping_address
@@ -20,32 +21,24 @@ const PaymentForm = ({ setLoading }) => {
     billing_address = cart.billing_address
   }
   
+  const handleSubmit = async (event) => {
+    event.preventDefault();
   
-
-  const handleError = async (submitError) => {
-    if (submitError) {
-      setLoading(false)
-      setErrorMessage(submitError.message)
-      return
+    if (!stripe) {
+      // Stripe.js hasn't yet loaded.
+      // Make sure to disable form submission until Stripe.js has loaded.
+      return;
     }
-    return
-  }
-
-  const handlePayment = async e => {
-    e.preventDefault()
-    setLoading(true)
-
-    if (!stripe || !elements) {
-      return
-    }
-
+  
+    setLoading(true);
+  
     // Trigger form validation and wallet collection
-    const { error: submitError} = await elements.submit();
+    const {error: submitError} = await elements.submit();
     if (submitError) {
       handleError(submitError);
       return;
     }
-
+  
     // Use the clientSecret and Elements instance to confirm the setup
     const { error } = await stripe.confirmPayment({
       elements,
@@ -81,24 +74,22 @@ const PaymentForm = ({ setLoading }) => {
 
       },
       // Uncomment below if you only want redirect for redirect-based payments
-      //redirect: "if_required",
+      redirect: "always",
     });
-
-
-
+  
     if (error) {
       handleError(error);
     }
-  }
+  };
 
   return (
-    <form onSubmit={handlePayment}>
+    <form onSubmit={handleSubmit}>
       {errorMessage && <Text sx={{ fontSize: "10px" }}>{errorMessage}</Text>}
       <Box variant="box.paymentField">
-        <PaymentElement />
+        <CardElement />
       </Box>
       <Flex>
-        <Button variant="cta">Complete order</Button>
+        <Button variant="cta">Concluir</Button>
       </Flex>
     </form>
   )

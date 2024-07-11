@@ -29,7 +29,7 @@ const RegionSelector = ({ selected, regions, handleRegionChange }) => {
           mr: "4px",
         }}
       >
-        Country:
+        Pais:
       </Text>
       <Select
         value={selected}

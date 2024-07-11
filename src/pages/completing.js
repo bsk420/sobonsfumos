@@ -8,9 +8,9 @@ import Spinner from "../components/spinner/spinner"
 
 const Completing = () => {
   const router = useRouter()
-
   const {cid} = router.query
- 
+
+
   const completeCartMutation = useCompleteCart(cid)
 
   const completeCart = async () => {
@@ -28,7 +28,7 @@ const Completing = () => {
       return;
     }
     completeCart()
-  }, [cid])
+  }, [cid, completeCart])
 
   return (
     <Layout>

@@ -7,20 +7,35 @@ import Review from "../payment/review"
 import Total from "../payment/total"
 import Spinner from "../spinner/spinner"
 
+const DeliveryReview = ({ delivery, displayCountry }) => (
+  <Flex
+    sx={{
+      flexDirection: "column",
+      borderBottom: "1px solid #E5E7EB",
+      pb: "16px",
+      pt: "8px",
+    }}
+  >
+    <Text variant="subheading" sx={{ mb: "8px" }}>
+      Entrega
+    </Text>
+    <Text variant="summary">{delivery.address_1}</Text>
+    <Text variant="summary">{`${delivery.postal_code}, ${delivery.city}`}</Text>
+    <Text variant="summary">{displayCountry}</Text>
+  </Flex>
+)
+
 const Payment = ({ region, country, activeStep }) => {
   const [loading, setLoading] = useState(false)
-  const router = useRouter()
-  const { cart, pay, completeCheckout } = useCart()
+  const { cart, pay } = useCart()
 
   const [fullCountry, setFullCountry] = useState("")
-
 
   useEffect(() => {
     if (activeStep === "payment") {
       setFullCountry(
         region.countries.find(c => c.iso_2 === country).display_name
       )
-
     }
   }, [country, region, activeStep])
 
@@ -52,25 +67,13 @@ const Payment = ({ region, country, activeStep }) => {
                 <Spinner />
               </Flex>
             )}
-            <Text variant="header3">Payment</Text>
+            <Text variant="header3">Pagamento</Text>
             <Box mt={"16px"}>
               <Review cart={cart} /> <Total cart={cart} />
-
-              <Flex
-                sx={{
-                  flexDirection: "column",
-                  borderBottom: "1px solid #E5E7EB",
-                  pb: "16px",
-                  pt: "8px",
-                }}
-              >
-                <Text variant="subheading" sx={{ mb: "8px" }}>
-                  Delivery
-                </Text>
-                <Text variant="summary">{cart.shipping_address.address_1}</Text>
-                <Text variant="summary">{`${cart.shipping_address.postal_code}, ${cart.shipping_address.city}`}</Text>
-                <Text variant="summary">{fullCountry}</Text>
-              </Flex>
+              <DeliveryReview
+                displayCountry={fullCountry}
+                delivery={cart.shipping_address}
+              />
               <Flex
                 sx={{
                   flexDirection: "column",
@@ -78,7 +81,7 @@ const Payment = ({ region, country, activeStep }) => {
                 }}
               >
                 <Text variant="subheading" sx={{ mb: "8px" }}>
-                  Payment method
+                  Método de Pagamento
                 </Text>
                 <PaymentDetails
                   setLoading={setLoading}
@@ -88,7 +91,7 @@ const Payment = ({ region, country, activeStep }) => {
           </Flex>
         </Card>
       ) : (
-        <Card variant="accordionTrigger">Payment</Card>
+        <Card variant="accordionTrigger">Pagamento</Card>
       )}
     </Flex>
   )
