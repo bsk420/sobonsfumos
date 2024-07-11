@@ -3,6 +3,7 @@ import { loadStripe } from "@stripe/stripe-js"
 import { useCart } from "medusa-react"
 import React, { useMemo } from "react"
 import PaymentForm from "./payment-form"
+import { client } from "../../utils/client"
 
 const STRIPE_KEY = process.env.NODE_ENV !== "development" ? process.env.NEXT_PUBLIC_STRIPE_API_KEY : process.env.NEXT_PUBLIC_DEV_STRIPE_API_KEY
 const stripePromise = loadStripe(STRIPE_KEY)
@@ -23,7 +24,10 @@ const Payment = ({ handleSubmit, setLoading }) => {
   }
 
   const options = {
-    client_secret: stripeSession.data.client_secret,
+    mode: stripeSession.mode,
+    amount: stripeSession.amount_total,
+    currency: stripeSession.currency,
+    clientSecret: stripeSession.data.client_secret
   }
 
   return (
