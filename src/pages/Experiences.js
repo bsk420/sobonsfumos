@@ -1,4 +1,6 @@
-import React, { useEffect, useRouter} from "react";
+import React, { useEffect } from "react";
+import { useRouter } from 'next/router'
+
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import tw from "twin.macro";
 
