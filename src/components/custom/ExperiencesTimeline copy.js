@@ -4,9 +4,11 @@ import tw from "twin.macro";
 import { ReactComponent as SvgDotPatternIcon } from "../../images/dot-pattern.svg";
 import { SectionHeading as HeadingTitle } from "../misc/Headings.js";
 
+
+
 const Container = tw.div`relative`;
 
-const SingleColumn = tw.div`max-w-screen-xl mx-auto`;
+const SingleColumn = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 
 const HeadingInfoContainer = tw.div`flex flex-col items-center`;
 
@@ -23,7 +25,6 @@ const Image = styled.div(props => [
 const Details = tw.div`mt-4 md:mt-0 md:max-w-md mx-4 sm:mx-8 md:mx-4 lg:mx-8`;
 const Subtitle = tw.div`font-bold tracking-wide text-secondary-100`;
 const Title = tw.h4`text-3xl font-bold text-white`;
-const Description = tw.p`mt-2 text-lg leading-loose text-white`;
 
 const SvgDotPattern1 = tw(
   SvgDotPatternIcon
@@ -42,41 +43,25 @@ export default () => {
   const cards = [
     {
       imageSrc:
-        "https://i.imgur.com/dvg4ziQ.png",
-      subtitle: "Concluido",
-      title: "Cannadouro 2023",
-      description:
-        "Neste evento o documentario 'Beldi (2023)' foi exibido, pela primeira vez no Porto.",
-      url: "https://cannadouro.pt/"
+        "https://i.imgur.com/a2ywHti.png",
+      subtitle: "24 Julho 2023 - 31 Julho 2023",
+      title: "MOROCCO'S SBF EXPERIENCE GRUPO 1",
+      url: ""
     },
 
     {
       imageSrc:
-        "https://i.imgur.com/RdKLbY4.png",
-      subtitle: "Concluido",
-      title: "FUMOS'S SECRET SESH",
-      description:
-        "Neste evento o documentario 'Beldi (2023)' foi exibido, pela segunda vez em Lisboa.",
-      url: "https://xceed.me/en/lisboa/event/fumos-secret-sesh-2--142648"
+        "https://i.imgur.com/fJDOi7F.png",
+      subtitle: "3 Agosto 2023 - 10 Agosto 2023",
+      title: "MOROCCO'S SBF EXPERIENCE GRUPO 2",
+      url: ""
     },
 
     {
       imageSrc:
-        "https://i.imgur.com/0Lf4Aee.png",
-      subtitle: "Concluido",
-      title: "MORROCAN WAY",
-      description:
-        "Neste evento o documentario 'Beldi (2023)' foi exibido, pela terceira e ultima vez.",
-      url: "https://xceed.me/en/lisboa/event/fumos-secret-sesh-2--142648"
-    },
-
-    {
-      imageSrc:
-        "https://i.imgur.com/n0wFsSi.png",
-      subtitle: "24 Julho - 21 Agosto",
-      title: "MOROCCO'S SBF EXPERIENCE",
-      description:
-      "Uma nova abordagem em experiencias turisticas.",
+        "https://i.imgur.com/yvaTa5B.png",
+      subtitle: "14 Agosto 2023 - 21 Agosto 2023",
+      title: "MOROCCO'S SBF EXPERIENCE GRUPO 3",
       url: ""
     }
   ];
@@ -85,7 +70,7 @@ export default () => {
     <Container>
       <SingleColumn>
         <HeadingInfoContainer>
-          <HeadingTitle>Eventos</HeadingTitle>
+          <HeadingTitle>Tours Cannabicos</HeadingTitle>
         </HeadingInfoContainer>
 
         <Content>
@@ -95,7 +80,6 @@ export default () => {
               <Details>
                 <Subtitle>{card.subtitle}</Subtitle>
                 <Title>{card.title}</Title>
-                <Description>{card.description}</Description>
               </Details>
             </Card>
           ))}
