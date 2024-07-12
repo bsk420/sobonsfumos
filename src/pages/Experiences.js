@@ -27,7 +27,7 @@ export default () => {
   const PDFViewer = () => {
     return (
     <div>
-    <iframe src="https://sbftv.com/sbfexperience.pdf" width="100%" height="1200px" />
+    <iframe title="Tours" src="https://sbftv.com/sbfexperience.pdf" width="100%" height="1200px" />
     </div>
     );
    };
