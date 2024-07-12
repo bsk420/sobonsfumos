@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { useNavigate  } from 'react-router-dom';
 
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import tw from "twin.macro";
@@ -15,8 +14,6 @@ import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 /* Hero */
 
 export default () => {
-  let navigate = useNavigate();
-
   /*
    * Using gtag like this because we only want to use Google Analytics when Main Landing Page is rendered
    * Remove this part and the the gtag script inside public/index.html if you dont need google analytics
@@ -26,9 +23,6 @@ export default () => {
     window.gtag("config", "UA-45799926-9");
   }, [])
   
-  const go = () => {
-     navigate(``)
-  }
   const Container = tw.div`relative`;
 
   return (
@@ -36,7 +30,7 @@ export default () => {
       <Container>
         <ExperiencesHero />
         <ExperiencesDescription />
-        <center><a href="https://sbftv.com/sbfexperience.pdf"><PrimaryButtonBase style={{fontSize: '100%'}} onClick={go}> More info</PrimaryButtonBase></a></center>
+        <center><a href="https://sbftv.com/sbfexperience.pdf"><PrimaryButtonBase style={{fontSize: '100%'}}> More info</PrimaryButtonBase></a></center>
         <ExperiencesTimeline />
         <Footer />
       </Container>
