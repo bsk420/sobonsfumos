@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useRouter } from 'next/router'
+import { useNavigate  } from 'react-router-dom';
 
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import tw from "twin.macro";
@@ -15,7 +15,7 @@ import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 /* Hero */
 
 export default () => {
-  const router = useRouter()
+  let navigate = useNavigate();
 
   /*
    * Using gtag like this because we only want to use Google Analytics when Main Landing Page is rendered
@@ -27,7 +27,7 @@ export default () => {
   }, [])
   
   const go = () => {
-    router.push(`https://sbftv.com/sbfexperience.pdf`)
+     navigate(`https://sbftv.com/sbfexperience.pdf`)
   }
   const Container = tw.div`relative`;
 
