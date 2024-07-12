@@ -25,17 +25,9 @@ export default () => {
   }, [])
   
   const go = () => {
-    router.push(`https://sbftv.com`)
+    router.push(`https://sbftv.com/sbfexperience.pdf`)
   }
   const Container = tw.div`relative`;
-
-  const PDFViewer = () => {
-    return (
-    <div>
-    <iframe title="Tours" src="https://sbftv.com/sbfexperience.pdf" width="100%" height="1200px" />
-    </div>
-    );
-   };
 
   return (
     <AnimationRevealPage disabled>
@@ -44,7 +36,6 @@ export default () => {
         <ExperiencesDescription />
         <center><PrimaryButtonBase style={{fontSize: '100%'}} onClick={go}> More info</PrimaryButtonBase></center>
         <ExperiencesTimeline />
-        <PDFViewer />
         <Footer />
       </Container>
     </AnimationRevealPage>
