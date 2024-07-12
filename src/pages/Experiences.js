@@ -1,13 +1,11 @@
 import React, { useEffect } from "react";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import tw from "twin.macro";
-import ReactPDF from '@intelllex/react-pdf';
 
 import ExperiencesHero from "components/hero/ExperiencesHero.js";
 import ExperiencesDescription from "components/custom/ExperiencesDescription.js";
 import ExperiencesTimeline from "components/custom/ExperiencesTimeline.js";
 import Footer from "components/footers/Footer.js";
-
 
 
 
@@ -25,17 +23,14 @@ export default () => {
   
 
   const Container = tw.div`relative`;
-  
 
-const ReactPDF = () => {
+  const PDFViewer = () => {
     return (
-        <ReactPDF
-            url="https://sbftv.com/sbfexperience.pdf"
-            showProgressBar
-            showToolbox
-        />
-    )
-};
+    <div>
+    <iframe src="https://sbftv.com/sbfexperience.pdf" width="100%" height="1200px" />
+    </div>
+    );
+   };
 
   return (
     <AnimationRevealPage disabled>
@@ -43,7 +38,7 @@ const ReactPDF = () => {
         <ExperiencesHero />
         <ExperiencesDescription />
         <ExperiencesTimeline />
-        <ReactPDF />
+        <PDFViewer />
         <Footer />
       </Container>
     </AnimationRevealPage>
