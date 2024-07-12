@@ -27,7 +27,7 @@ export default () => {
   }, [])
   
   const go = () => {
-     navigate(`https://sbftv.com/sbfexperience.pdf`)
+     navigate(``)
   }
   const Container = tw.div`relative`;
 
@@ -36,7 +36,7 @@ export default () => {
       <Container>
         <ExperiencesHero />
         <ExperiencesDescription />
-        <center><PrimaryButtonBase style={{fontSize: '100%'}} onClick={go}> More info</PrimaryButtonBase></center>
+        <center><a href="https://sbftv.com/sbfexperience.pdf"><PrimaryButtonBase style={{fontSize: '100%'}} onClick={go}> More info</PrimaryButtonBase></a></center>
         <ExperiencesTimeline />
         <Footer />
       </Container>
