@@ -24,10 +24,10 @@ const TextContent = tw.div`lg:py-8 text-center md:text-left`;
 
 const Heading = tw(
   SectionHeading
-)`mt-4 font-black text-gray-600 text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
+)`mt-4 font-black text-gray-600 text-3xl sm:text-4xl lg:text-5xl text-center leading-tight`;
 const Heading2 = tw(
   SectionHeading
-)`mt-4 font-black text-gray-600 text-left text-2xl sm:text-2xl lg:text-2xl text-center md:text-left leading-tight`;
+)`mt-4 font-black text-gray-600 text-left text-2xl sm:text-2xl lg:text-2xl text-center leading-tight`;
 const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-white`;
 
 
@@ -56,10 +56,10 @@ export default ({
             <Description style={{ backgroundColor: 'rgba(37, 150, 190, 0.2)', padding: '10px',  position: "relative", top: '-10vh'}}>{description}</Description>
           </TextContent>
         </TextColumn>
-        <ImageColumn>
-          <Heading2 style={{ position: "relative", top: '-5vh', left: '26.5vh'}}>{heading}</Heading2>
-          <Image style={{ position: "relative", top: '-4vh', left: '16.5vh', width: '65%', height: '65%'}} src="https://i.imgur.com/T3IPCCm.png"></Image>
-          <center><a style={{ position: "relative", left: '5vh', top: '-2vh'}} href="https://sbftv.com/sbfexperience.pdf"><PrimaryButtonBase disabled='true' style={{fontSize: '100%', backgroundColor: '#0b6a9c'}}> More information soon..</PrimaryButtonBase></a></center>
+        <ImageColumn >
+          <Heading2 style={{ position: "relative", top: '-5vh'}}>{heading}</Heading2>
+          <Image style={{ position: "relative", top: '-4vh', width: '70%', height: '70%', paddingLeft: '20vh', paddingRight: '2'}} src="https://i.imgur.com/T3IPCCm.png"></Image>
+          <center><a style={{ position: "relative", left: 'vh', top: '-2vh' }} href="https://sbftv.com/sbfexperience.pdf"><PrimaryButtonBase disabled='true' style={{fontSize: '100%', backgroundColor: '#0b6a9c', width: '80%'}}> More information soon..</PrimaryButtonBase></a></center>
         </ImageColumn>
       </TwoColumn>
     </Container>
