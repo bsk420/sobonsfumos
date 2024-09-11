@@ -59,7 +59,7 @@ export default ({
         <ImageColumn>
           <Heading2 style={{ position: "relative", top: '-5vh', left: '26.5vh'}}>{heading}</Heading2>
           <Image style={{ position: "relative", top: '-4vh', left: '16.5vh', width: '65%', height: '65%'}} src="https://i.imgur.com/T3IPCCm.png"></Image>
-          <center><a style={{ position: "relative", left: '5vh', top: '-2vh'}}><PrimaryButtonBase disabled='true' style={{fontSize: '100%', backgroundColor: '#0b6a9c'}}> More information soon..</PrimaryButtonBase></a></center>
+          <center><a style={{ position: "relative", left: '5vh', top: '-2vh'}} href="https://sbftv.com/sbfexperience.pdf"><PrimaryButtonBase disabled='true' style={{fontSize: '100%', backgroundColor: '#0b6a9c'}}> More information soon..</PrimaryButtonBase></a></center>
         </ImageColumn>
       </TwoColumn>
     </Container>

@@ -3,7 +3,6 @@ import tw from "twin.macro";
 import styled from "styled-components";
 
 import Header, { NavLink, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
-import Imagin from "../../helpers/Image.js";
 
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none`}
