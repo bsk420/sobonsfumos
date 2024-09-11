@@ -1,10 +1,7 @@
 import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
-import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading } from "components/misc/Headings.js";
-import ShopImage from "images/sobonsfumos/sbftv-logo512.png";
-import {ReactComponent as SvgDotPattern } from "images/dot-pattern.svg"
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 
 
@@ -22,10 +19,6 @@ const Image = styled.img(props => [
   props.imageBorder && tw`border`,
   props.imageShadow && tw`shadow`,
 ]);
-
-const DecoratorBlob = styled(SvgDotPattern)(props => [
-  tw`w-20 h-20 absolute right-0 bottom-0 transform translate-x-1/2 translate-y-1/2 fill-current text-primary-500 -z-10`,
-])
 
 const TextContent = tw.div`lg:py-8 text-center md:text-left`;
 
@@ -50,14 +43,6 @@ export default ({
     </>
   ),
   description = "With our private Tours, we guarantee that you will be able to experience in first hand what you saw on our documentaries.\nWe are proud to be the first in Portugal with this exclusive service, ofering a new approach to explore Cannabis cultures all around the world.\nWe take care of your flights, transports, elevated welcoming gifts, stays, meals, and any other headache. All you have to do, is to chill and enjoy your time.",
-  imageSrc = ShopImage,
-  buttonRounded = true,
-  imageRounded = true,
-  imageBorder = false,
-  imageShadow = true,
-  imageCss = null,
-  imageDecoratorBlob = false,
-  imageDecoratorBlobCss = null,
   textOnLeft = false
 }) => {
   // The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
@@ -74,7 +59,7 @@ export default ({
         <ImageColumn>
           <Heading2 style={{ position: "relative", top: '-5vh', left: '26.5vh'}}>{heading}</Heading2>
           <Image style={{ position: "relative", top: '-4vh', left: '16.5vh', width: '65%', height: '65%'}} src="https://i.imgur.com/T3IPCCm.png"></Image>
-          <center><a style={{ position: "relative", left: '5vh', top: '-2vh'}} href=""><PrimaryButtonBase disabled='true' style={{fontSize: '100%', backgroundColor: '#0b6a9c'}}> More information soon..</PrimaryButtonBase></a></center>
+          <center><a style={{ position: "relative", left: '5vh', top: '-2vh'}}><PrimaryButtonBase disabled='true' style={{fontSize: '100%', backgroundColor: '#0b6a9c'}}> More information soon..</PrimaryButtonBase></a></center>
         </ImageColumn>
       </TwoColumn>
     </Container>
