@@ -33,7 +33,7 @@ const DecoratorBlob = styled(SvgDotPattern)(props => [
 export default ({
   heading = (
     <>
-      <span tw="text-white">Documentaries</span>
+      <span tw="text-white">Our Documentaries</span>
     </>
   ),
   description = "With our documentaries we intend to showcase the places in the world where Cannabis has prospered together with Humans, explaining all it's history giving emphasis to it's symbiosis with Humans and the type of culture that was created in those same places.",
@@ -55,7 +55,7 @@ export default ({
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>
             <Heading>{heading}</Heading>
-            <Description>{description}</Description>
+            <Description style={{ backgroundColor: 'rgba(37, 150, 190, 0.2)', padding: '10px',}}>{description}</Description>
           </TextContent>
         </TextColumn>
       </TwoColumn>

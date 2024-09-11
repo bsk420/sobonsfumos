@@ -44,7 +44,7 @@ export default () => {
     {
       imageSrc:
         "https://i.imgur.com/a2ywHti.png",
-      subtitle: "24th July 2023 - 31st July 2023",
+      subtitle: "24th July 2024 - 31st July 2024",
       title: "MOROCCO'S SBF EXPERIENCE #1",
       url: ""
     },
@@ -52,7 +52,7 @@ export default () => {
     {
       imageSrc:
         "https://i.imgur.com/fJDOi7F.png",
-      subtitle: "3rd August 2023 - 10th August 2023",
+      subtitle: "3rd August 2024 - 10th August 2024",
       title: "MOROCCO'S SBF EXPERIENCE #2",
       url: ""
     },
@@ -60,7 +60,7 @@ export default () => {
     {
       imageSrc:
         "https://i.imgur.com/yvaTa5B.png",
-      subtitle: "14th August 2023 - 21st August 2023",
+      subtitle: "14th August 2024 - 21st August 2024",
       title: "MOROCCO'S SBF EXPERIENCE #3",
       url: ""
     }

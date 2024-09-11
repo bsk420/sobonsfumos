@@ -73,7 +73,7 @@ export default () => {
               <Details>
                 <Subtitle>{card.subtitle}</Subtitle>
                 <Title>{card.title}</Title>
-                <Description>{card.description}</Description>
+                <Description style={{ backgroundColor: 'rgba(37, 150, 190, 0.2)', padding: '10px',}}>{card.description}</Description>
               </Details>
             </Card>
             </a>

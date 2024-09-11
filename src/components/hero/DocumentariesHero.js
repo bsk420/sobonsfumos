@@ -64,7 +64,7 @@ export default () => {
               <span>"BELDI" (2023)</span>
             </Heading>
             <br />
-            <Paragraph>Discover all the wonders that the North of Morocco and the Rif Mountains have to offer, and also it's secrets.</Paragraph>
+            <Paragraph style={{ backgroundColor: 'rgba(37, 150, 190, 0.2)', padding: '10px',}}>Discover all the wonders that the North of Morocco and the Rif Mountains have to offer, and also it's secrets.</Paragraph>
           </LeftColumn>
           <RightColumn>
             <StyledResponsiveVideoEmbed

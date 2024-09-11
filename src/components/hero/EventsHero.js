@@ -38,16 +38,6 @@ export default () => {
     <Container>
       <HeroContainer>
         <StyledHeader />
-        <TwoColumn>
-          <LeftColumn>
-            <Heading>
-            <span>Events</span>
-            </Heading>
-            <br />
-          </LeftColumn>
-          <RightColumn>
-          </RightColumn>
-        </TwoColumn>
       </HeroContainer>
     </Container>
     </>

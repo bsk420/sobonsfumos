@@ -7,7 +7,6 @@ import ExperiencesHero from "components/hero/ExperiencesHero.js";
 import ExperiencesDescription from "components/custom/ExperiencesDescription.js";
 import ExperiencesTimeline from "components/custom/ExperiencesTimeline.js";
 import Footer from "components/footers/Footer.js";
-import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 
 
 
@@ -30,7 +29,6 @@ export default () => {
       <Container>
         <ExperiencesHero />
         <ExperiencesDescription />
-        <center><a href="https://sbftv.com/sbfexperience.pdf"><PrimaryButtonBase style={{fontSize: '100%'}}> More info</PrimaryButtonBase></a></center>
         <ExperiencesTimeline />
         <Footer />
       </Container>

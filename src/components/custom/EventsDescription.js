@@ -49,13 +49,12 @@ export default ({
     <Container>
       <TwoColumn css={!imageInsideDiv && tw`md:items-center`}>
         <ImageColumn css={imageContainerCss}>
-          {imageInsideDiv ? <Image imageSrc={imageSrc} css={imageCss} /> : <img src={imageSrc} css={imageCss} alt="" />}
-          {imageDecoratorBlob && <DecoratorBlob css={imageDecoratorBlobCss} />}
+
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>
             <Heading>{heading}</Heading>
-            <Description>{description}</Description>
+            <Description style={{ backgroundColor: 'rgba(37, 150, 190, 0.2)', padding: '10px',}}>{description}</Description>
           </TextContent>
         </TextColumn>
       </TwoColumn>

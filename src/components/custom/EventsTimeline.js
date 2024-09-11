@@ -42,7 +42,7 @@ export default () => {
   const cards = [
     {
       imageSrc:
-        "https://i.imgur.com/dvg4ziQ.png",
+        "https://i.imgur.com/nEWDaKd.png",
       subtitle: "Concluded",
       title: "Cannadouro 2023",
       description:
@@ -52,7 +52,7 @@ export default () => {
 
     {
       imageSrc:
-        "https://i.imgur.com/RdKLbY4.png",
+        "https://i.imgur.com/yl4TCj5.png",
       subtitle: "Concluded",
       title: "FUMOS'S SECRET SESH",
       description:
@@ -62,9 +62,9 @@ export default () => {
 
     {
       imageSrc:
-        "https://i.imgur.com/0Lf4Aee.png",
+        "https://i.imgur.com/LL6iDW9.png",
       subtitle: "Concluded",
-      title: "MORROCAN WAY",
+      title: "MOROCCAN WAY",
       description:
         "In Lisboa, at Cognoscitiva, we had our third and final screening of the \"BELDI\" (2023) Documentary. This event also had live music with traditional Arabic instruments and food that made you smile 😉",
       url: "https://xceed.me/en/lisboa/event/fumos-secret-sesh-2--142648"
@@ -72,11 +72,11 @@ export default () => {
 
     {
       imageSrc:
-        "https://i.imgur.com/n0wFsSi.png",
+        "https://i.imgur.com/PSUJYxL.jpeg",
       subtitle: "Concluded",
-      title: "MOROCCO'S SBF EXPERIENCE",
+      title: "MOROCCO'S SBF EXPERIENCE 2024",
       description:
-      "A new approach to Tourism Experiences.",
+      "This Summer we had our first Moroccan Experience open to the public, we set 3 dates for the excursions and more than 15 people joined the adventure of exploring the Cannabis culture in the North of Morocco.",
       url: ""
     }
   ];
@@ -95,7 +95,7 @@ export default () => {
               <Details>
                 <Subtitle>{card.subtitle}</Subtitle>
                 <Title>{card.title}</Title>
-                <Description>{card.description}</Description>
+                <Description style={{ backgroundColor: 'rgba(37, 150, 190, 0.2)', padding: '10px',}}>{card.description}</Description>
               </Details>
             </Card>
           ))}

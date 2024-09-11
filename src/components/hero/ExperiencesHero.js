@@ -46,18 +46,6 @@ export default () => {
     <Container>
       <HeroContainer>
         <StyledHeader/>
-        <TwoColumn>
-          <LeftColumn>
-            <Heading>
-              <span>TOURS  </span>
-            </Heading>
-          </LeftColumn>
-          <RightColumn>
-            <Image
-              url={ExperiencesImage}
-            />
-          </RightColumn>
-        </TwoColumn>
       </HeroContainer>
     </Container>
   );
