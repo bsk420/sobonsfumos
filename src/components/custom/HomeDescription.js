@@ -18,7 +18,7 @@ const Description = tw.p`mt-4 text-center md:text-left text-2xl md:text-2xl lg:t
 
 
 export default ({
-  description = "O nosso objectivo é dar a oportunidade a todos de experienciar e conhecer as culturas onde a Cannabis esteve históricamente presente até aos dias de hoje, através de Documentários e Excursões Canábicas por esses mesmos locais.",
+  description = "Through our Documentaries and Private Tours, we intend to give everyone the opportunity to experience in first hand and to learn about all the cultures where Cannabis has been historically present until this date.",
   imageContainerCss = null,
   imageInsideDiv = true,
   textOnLeft = false

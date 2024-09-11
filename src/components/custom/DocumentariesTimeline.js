@@ -47,10 +47,9 @@ export default () => {
       imageTo: 'https://youtu.be/EY8ie9QF944',
       imageSrc:
         "https://i.imgur.com/xROYaFv.png",
-      subtitle: "19 Nov 2023",
+      subtitle: "19th Nov 2023",
       title: "BELDI (2023)",
-      description:
-        "O primeiro de muitos documentários da SBFTV. ",
+      description: "Our first documentary, exploring the North of Morocco and the Cannabis culture that exists in the Rif, giving light to both sides of it's culture.",
       url: ""
     },
   ];
@@ -61,7 +60,7 @@ export default () => {
     <Container>
       <SingleColumn>
         <HeadingInfoContainer>
-          <HeadingTitle>Documentarios</HeadingTitle>
+          <HeadingTitle>Past Documentaries</HeadingTitle>
           <HeadingDescription>
           </HeadingDescription>
         </HeadingInfoContainer>

@@ -33,10 +33,10 @@ const DecoratorBlob = styled(SvgDotPattern)(props => [
 export default ({
   heading = (
     <>
-      <span tw="text-white">EVENTOS      </span>
+      <span tw="text-white">Our Events      </span>
     </>
   ),
-  description = "Com os nossos eventos pretendemos juntar pessoas com a mesma mentalidade e o mesmo amor pela nossa planta sagrada e tudo o que a envolve. Aprendendo uns com os outros, e uns sobre os outros, crescendo mais fortes como uma comunidade, trocando ideias, sabores e conhecimento. Tencionamos organizar eventos temáticos com segurança e liberdade, ajudando esta cultura a prosperar e elevar-se ainda mais.",
+  description = "With our events, we intend to gather like-minded people with the same love for our sacret plant and all that it envolves.\nLearning with eachother and about eachother, exchanging ideas, flavours and knowledge. With our freedom and safety as a priority.\nGrowing stronger as a community, helping the culture prosper and elevate even more.",
   imageSrc = DocumentariesLogo,
   imageCss = null,
   imageContainerCss = null,

@@ -46,10 +46,10 @@ export default () => {
         <SixColumns>
         <SubscribeNewsletterColumn>
             <SubscribeNewsletterContainer>
-              <ColumnHeading>Sobre</ColumnHeading>
+              <ColumnHeading>About</ColumnHeading>
               <SubscribeText>
                 Tomás "SBF" Percheiro<br />
-                Jornalista Cannabico & Guia
+                Cannabis Journalist & Tour Guide
               </SubscribeText>
             </SubscribeNewsletterContainer>
           </SubscribeNewsletterColumn>
@@ -61,10 +61,10 @@ export default () => {
           </Column>
           <SubscribeNewsletterColumn>
             <SubscribeNewsletterContainer>
-              <ColumnHeading>Contacto</ColumnHeading>
+              <ColumnHeading>Contact</ColumnHeading>
               <SubscribeText>
                 WhatsApp: +351 934 455 925<br />
-                Email: contact@sbftv.com
+                Email: tomas.percheiro@gmail.com
               </SubscribeText>
             </SubscribeNewsletterContainer>
           </SubscribeNewsletterColumn>

@@ -43,40 +43,40 @@ export default () => {
     {
       imageSrc:
         "https://i.imgur.com/dvg4ziQ.png",
-      subtitle: "Concluido",
+      subtitle: "Concluded",
       title: "Cannadouro 2023",
       description:
-        "Neste evento o documentario 'Beldi (2023)' foi exibido, pela primeira vez no Porto.",
+        "In Porto, during Cannadouro event, we had our Premiere of the \"BELDI\" (2023) Documentary, being also featured in the event's official magazine.",
       url: "https://cannadouro.pt/"
     },
 
     {
       imageSrc:
         "https://i.imgur.com/RdKLbY4.png",
-      subtitle: "Concluido",
+      subtitle: "Concluded",
       title: "FUMOS'S SECRET SESH",
       description:
-        "Neste evento o documentario 'Beldi (2023)' foi exibido, pela segunda vez em Lisboa.",
+        "In Lisboa, at NAV we produced Portugal's first Secret Sesh private event and screened \"BELDI\" (2023) for the first time in Lisbon. The event was sold out, with hundreds of tickets acquired. We cannot thank you enough ❤️",
       url: "https://xceed.me/en/lisboa/event/fumos-secret-sesh-2--142648"
     },
 
     {
       imageSrc:
         "https://i.imgur.com/0Lf4Aee.png",
-      subtitle: "Concluido",
+      subtitle: "Concluded",
       title: "MORROCAN WAY",
       description:
-        "Neste evento o documentario 'Beldi (2023)' foi exibido, pela terceira e ultima vez.",
+        "In Lisboa, at Cognoscitiva, we had our third and final screening of the \"BELDI\" (2023) Documentary. This event also had live music with traditional Arabic instruments and food that made you smile 😉",
       url: "https://xceed.me/en/lisboa/event/fumos-secret-sesh-2--142648"
     },
 
     {
       imageSrc:
         "https://i.imgur.com/n0wFsSi.png",
-      subtitle: "24 Julho - 21 Agosto",
+      subtitle: "Concluded",
       title: "MOROCCO'S SBF EXPERIENCE",
       description:
-      "Uma nova abordagem em experiencias turisticas.",
+      "A new approach to Tourism Experiences.",
       url: ""
     }
   ];
@@ -85,7 +85,7 @@ export default () => {
     <Container>
       <SingleColumn>
         <HeadingInfoContainer>
-          <HeadingTitle>Eventos</HeadingTitle>
+          <HeadingTitle>Past Events</HeadingTitle>
         </HeadingInfoContainer>
 
         <Content>

@@ -50,8 +50,6 @@ export default () => {
           <LeftColumn>
             <Heading>
               <span>TOURS  </span>
-              <br />
-              <span>CANABICOS</span>
             </Heading>
           </LeftColumn>
           <RightColumn>

@@ -64,7 +64,7 @@ export default () => {
               <span>"BELDI" (2023)</span>
             </Heading>
             <br />
-            <Paragraph>Descobre tudo sobre a cultura canábica nas famosas Montanhas Rif no Norte de Marrocos!</Paragraph>
+            <Paragraph>Discover all the wonders that the North of Morocco and the Rif Mountains have to offer, and also it's secrets.</Paragraph>
           </LeftColumn>
           <RightColumn>
             <StyledResponsiveVideoEmbed

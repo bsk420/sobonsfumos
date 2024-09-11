@@ -44,24 +44,24 @@ export default () => {
     {
       imageSrc:
         "https://i.imgur.com/a2ywHti.png",
-      subtitle: "24 Julho 2023 - 31 Julho 2023",
-      title: "MOROCCO'S SBF EXPERIENCE GRUPO 1",
+      subtitle: "24th July 2023 - 31st July 2023",
+      title: "MOROCCO'S SBF EXPERIENCE #1",
       url: ""
     },
 
     {
       imageSrc:
         "https://i.imgur.com/fJDOi7F.png",
-      subtitle: "3 Agosto 2023 - 10 Agosto 2023",
-      title: "MOROCCO'S SBF EXPERIENCE GRUPO 2",
+      subtitle: "3rd August 2023 - 10th August 2023",
+      title: "MOROCCO'S SBF EXPERIENCE #2",
       url: ""
     },
 
     {
       imageSrc:
         "https://i.imgur.com/yvaTa5B.png",
-      subtitle: "14 Agosto 2023 - 21 Agosto 2023",
-      title: "MOROCCO'S SBF EXPERIENCE GRUPO 3",
+      subtitle: "14th August 2023 - 21st August 2023",
+      title: "MOROCCO'S SBF EXPERIENCE #3",
       url: ""
     }
   ];
@@ -70,7 +70,7 @@ export default () => {
     <Container>
       <SingleColumn>
         <HeadingInfoContainer>
-          <HeadingTitle>Tours Cannabicos</HeadingTitle>
+          <HeadingTitle>Past Tours</HeadingTitle>
         </HeadingInfoContainer>
 
         <Content>

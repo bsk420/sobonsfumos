@@ -36,10 +36,10 @@ const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:t
 export default ({
   heading = (
     <>
-     <span tw="text-white">Excursões</span>
+     <span tw="text-white">Our Tours</span>
     </>
   ),
-  description = "Com as nossas excursões, garantimos que vais poder experienciar em primeira mão, tudo o que viste nos nossos documentários. Temos o Orgulho de ser os primeiros em Portugal com este serviço exclusivo, oferecendo uma nova abordagem para explorar a cultura canábica pelo Mundo. Tomamos conta do voo, transportes, alojamento, refeições e quaisquer dores de cabeça, para que só te falte aproveitar e relaxar",
+  description = "With our private Tours, we guarantee that you will be able to experience in first hand what you saw on our documentaries.\nWe are proud to be the first in Portugal with this exclusive service, ofering a new approach to explore Cannabis cultures all around the world.\nWe take care of your flights, transports, elevated welcoming gifts, stays, meals, and any other headache. All you have to do, is to chill and enjoy your time.",
   imageSrc = ShopImage,
   buttonRounded = true,
   imageRounded = true,
