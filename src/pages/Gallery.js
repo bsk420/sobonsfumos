@@ -10,15 +10,13 @@ const Carousel = () => {
     dots: true,
     infinite: true,
     speed: 750,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: "0",
     autoplay: true,
     autoplaySpeed: 2000,
     adaptiveHeight: true,
-    pauseOnHover: true,
-    fade: true
   };
 
   return (
@@ -92,12 +90,6 @@ const Carousel = () => {
         </div>
         <div>
           <img
-            src="https://files.yetanotherdude.xyz/sharex/ShareX/2024/10/IMG_6954.JPG"
-            alt="SBF #12"
-          />
-        </div>
-        <div>
-          <img
             src="https://files.yetanotherdude.xyz/sharex/ShareX/2024/10/IMG_6952.JPG"
             alt="SBF #13"
           />
@@ -108,7 +100,12 @@ const Carousel = () => {
             alt="SBF #14"
           />
         </div>
-
+        <div>
+          <img
+            src="https://files.yetanotherdude.xyz/sharex/ShareX/2024/10/IMG_6860.JPG"
+            alt="SBF #15"
+          />
+        </div>
         <div>
           <img
             src="https://files.yetanotherdude.xyz/sharex/ShareX/2024/10/IMG_6858.JPG"
