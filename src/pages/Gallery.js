@@ -108,12 +108,7 @@ const Carousel = () => {
             alt="SBF #14"
           />
         </div>
-        <div>
-          <img
-            src="https://files.yetanotherdude.xyz/sharex/ShareX/2024/10/IMG_6860.JPG"
-            alt="SBF #15"
-          />
-        </div>
+
         <div>
           <img
             src="https://files.yetanotherdude.xyz/sharex/ShareX/2024/10/IMG_6858.JPG"
@@ -314,12 +309,6 @@ const Carousel = () => {
         </div>
         <div>
           <img
-            src="https://files.yetanotherdude.xyz/sharex/ShareX/2024/10/BDFB242C-4E89-437D-B7C4-395715DAD8C4.JPG"
-            alt="SBF #49"
-          />
-        </div>
-        <div>
-          <img
             src="https://files.yetanotherdude.xyz/sharex/ShareX/2024/10/818BC0D3-FFAB-441D-975B-A60A2F72BDD2.JPG"
             alt="SBF #50"
           />
@@ -346,30 +335,6 @@ const Carousel = () => {
           <img
             src="https://files.yetanotherdude.xyz/sharex/ShareX/2024/10/IMG_1235.JPG"
             alt="SBF #54"
-          />
-        </div>
-        <div>
-          <img
-            src="https://files.yetanotherdude.xyz/sharex/ShareX/2024/10/F86DBE34-5D20-4CC7-8D49-776EC63A4B97.JPG"
-            alt="SBF #55"
-          />
-        </div>
-        <div>
-          <img
-            src="https://files.yetanotherdude.xyz/sharex/ShareX/2024/10/C30CAFB8-0890-4A10-BF36-CCF35E0761E6.JPG"
-            alt="SBF #56"
-          />
-        </div>
-        <div>
-          <img
-            src="https://files.yetanotherdude.xyz/sharex/ShareX/2024/10/BDFB242C-4E89-437D-B7C4-395715DAD8C4.JPG"
-            alt="SBF #57"
-          />
-        </div>
-        <div>
-          <img
-            src="https://files.yetanotherdude.xyz/sharex/ShareX/2024/10/818BC0D3-FFAB-441D-975B-A60A2F72BDD2.JPG"
-            alt="SBF #58"
           />
         </div>
       </Slider>
