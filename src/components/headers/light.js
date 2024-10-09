@@ -84,6 +84,9 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
       <NavLink href="/events">
         Events
       </NavLink>
+      <NavLink href="/gallery">
+        Gallery
+      </NavLink>
     </NavLinks>
   ];
 
