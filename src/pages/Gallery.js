@@ -30,18 +30,6 @@ const Carousel = () => {
         </div>
         <div>
           <img
-            src="https://files.yetanotherdude.xyz/sharex/ShareX/2024/10/IMG_7123.JPG"
-            alt="SBF #2"
-          />
-        </div>
-        <div>
-          <img
-            src="https://files.yetanotherdude.xyz/sharex/ShareX/2024/10/IMG_7122.JPG"
-            alt="SBF #3"
-          />
-        </div>
-        <div>
-          <img
             src="https://files.yetanotherdude.xyz/sharex/ShareX/2024/10/IMG_7105.JPG"
             alt="SBF #4"
           />
