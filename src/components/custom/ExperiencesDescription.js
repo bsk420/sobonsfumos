@@ -24,18 +24,10 @@ const TextContent = tw.div`lg:py-8 text-center md:text-left`;
 const Heading = tw(
   SectionHeading
 )`mt-4 font-black text-gray-600 text-3xl sm:text-4xl lg:text-5xl text-center leading-tight`;
-const Heading2 = tw(
-  SectionHeading
-)`mt-4 font-black text-gray-600 text-left text-2xl sm:text-2xl lg:text-2xl text-center leading-tight`;
 const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-white`;
 
 
 export default ({
-  heading = (
-    <>
-     <span tw="text-white">Open for Booking</span>
-    </>
-  ),
   heading2 = (
     <>
      <span tw="text-white">Our Goal</span>
@@ -56,8 +48,7 @@ export default ({
           </TextContent>
         </TextColumn>
         <ImageColumn >
-          <Heading2 style={{ position: "relative", top: '-5vh'}}>{heading}</Heading2>
-          <Image style={{ position: "relative", top: '-4vh', width: '70%', height: '70%', paddingLeft: '20vh', paddingRight: '2'}} src="https://i.imgur.com/FQmS2ib.jpeg"></Image>
+          <Image style={{ position: "relative", top: '-4vh', width: '100%', height: '100%', paddingLeft: '20vh', paddingRight: '2'}} src="https://i.imgur.com/FQmS2ib.jpeg"></Image>
         </ImageColumn>
       </TwoColumn>
     </Container>

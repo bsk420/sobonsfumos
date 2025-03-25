@@ -18,9 +18,6 @@ const Image = styled.div(props => [
   `background-image: url("${props.imageSrc}");`,
   tw`rounded md:w-1/2 lg:w-5/12 xl:w-1/3 flex-shrink-0 h-80 md:h-144 bg-cover bg-center mx-4 sm:mx-8 md:mx-4 lg:mx-8`
 ]);
-const Details = tw.div`mt-4 md:mt-0 md:max-w-md mx-4 sm:mx-8 md:mx-4 lg:mx-8`;
-const Subtitle = tw.div`font-bold tracking-wide text-secondary-100`;
-const Title = tw.h4`text-3xl font-bold text-white`;
 
 const SvgDotPattern1 = tw(
   SvgDotPatternIcon
@@ -38,27 +35,24 @@ const SvgDotPattern4 = tw(
 export default () => {
   const cards = [
     {
+      imageWidth: "450px",
+      imageHeight: "800px",
       imageSrc:
         "https://i.imgur.com/7YQlupw.png",
-      subtitle: "",
-      title: "Price Table",
-      url: ""
     },
 
     {
+      imageWidth: "450px",
+      imageHeight: "800px",
       imageSrc:
         "https://i.imgur.com/C3zwbQ3.png",
-      subtitle: "",
-      title: "Dates",
-      url: ""
     },
 
     {
+      imageWidth: "450px",
+      imageHeight: "450px",
       imageSrc:
         "https://i.imgur.com/X76BMt8.png",
-      subtitle: "",
-      title: "Reservations",
-      url: ""
     }
   ];
 
@@ -68,11 +62,7 @@ export default () => {
         <Content>
           {cards.map((card, i) => (
             <Card key={i} reversed={i % 2 === 1}>
-              <Image imageSrc={card.imageSrc} style={{objectFit: "fit"}} />
-              <Details>
-                <Subtitle>{card.subtitle}</Subtitle>
-                <Title>{card.title}</Title>
-              </Details>
+              <Image imageSrc={card.imageSrc} style={{ objectFit: "scale-down", width: card.imageWidth, height: card.imageHeight }} />
             </Card>
           ))}
         </Content>
