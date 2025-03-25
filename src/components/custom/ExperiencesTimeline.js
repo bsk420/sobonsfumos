@@ -43,25 +43,25 @@ export default () => {
   const cards = [
     {
       imageSrc:
-        "https://i.imgur.com/a2ywHti.png",
-      subtitle: "24th July 2024 - 31st July 2024",
-      title: "MOROCCO'S SBF EXPERIENCE #1",
+        "https://i.imgur.com/7YQlupw.png",
+      subtitle: "",
+      title: "Price Table",
       url: ""
     },
 
     {
       imageSrc:
-        "https://i.imgur.com/fJDOi7F.png",
-      subtitle: "3rd August 2024 - 10th August 2024",
-      title: "MOROCCO'S SBF EXPERIENCE #2",
+        "https://i.imgur.com/C3zwbQ3.png",
+      subtitle: "",
+      title: "Dates",
       url: ""
     },
 
     {
       imageSrc:
-        "https://i.imgur.com/yvaTa5B.png",
-      subtitle: "14th August 2024 - 21st August 2024",
-      title: "MOROCCO'S SBF EXPERIENCE #3",
+        "https://i.imgur.com/X76BMt8.png",
+      subtitle: "",
+      title: "Reservations",
       url: ""
     }
   ];
@@ -69,10 +69,6 @@ export default () => {
   return (
     <Container>
       <SingleColumn>
-        <HeadingInfoContainer>
-          <HeadingTitle>Past Tours</HeadingTitle>
-        </HeadingInfoContainer>
-
         <Content>
           {cards.map((card, i) => (
             <Card key={i} reversed={i % 2 === 1}>
