@@ -94,6 +94,9 @@ export default () => {
   return (
     <Container>
       <SingleColumn>
+        <HeadingInfoContainer>
+          <HeadingTitle>Past Events</HeadingTitle>
+        </HeadingInfoContainer>
         <Content>
           {cards.map((card, i) => (
             <Card key={i} reversed={i % 2 === 1}>
