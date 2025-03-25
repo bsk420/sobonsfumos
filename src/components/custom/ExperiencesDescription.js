@@ -2,7 +2,6 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { SectionHeading } from "components/misc/Headings.js";
-import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 
 
 const Container = tw.div`relative`;
@@ -59,7 +58,6 @@ export default ({
         <ImageColumn >
           <Heading2 style={{ position: "relative", top: '-5vh'}}>{heading}</Heading2>
           <Image style={{ position: "relative", top: '-4vh', width: '70%', height: '70%', paddingLeft: '20vh', paddingRight: '2'}} src="https://i.imgur.com/FQmS2ib.jpeg"></Image>
-          <center><a style={{ position: "relative", left: 'vh', top: '-2vh' }} href="https://sbftv.com/sbfexperience.pdf"><PrimaryButtonBase style={{fontSize: '100%', backgroundColor: '#0b6a9c', width: '80%'}}> More information</PrimaryButtonBase></a></center>
         </ImageColumn>
       </TwoColumn>
     </Container>
