@@ -78,16 +78,22 @@ export default () => {
       description:
       "This Summer we had our first Moroccan Experience open to the public, we set 3 dates for the excursions and more than 15 people joined the adventure of exploring the Cannabis culture in the North of Morocco.",
       url: ""
-    }
+    },
+
+    {
+      imageSrc:
+        "https://i.imgur.com/yl4TCj5.png",
+      subtitle: "Concluded",
+      title: "FUMOS'S SECRET SESH V2",
+      description:
+        "In Lisboa, at NAV we produced Portugal's second Secret Sesh private event and screened \"BELDI\" (2023) for the first time in Lisbon. The event was sold out, with hundreds of tickets acquired. We cannot thank you enough ❤️",
+      url: "https://xceed.me/en/lisboa/event/fumos-secret-sesh-2--142648"
+    },
   ];
 
   return (
     <Container>
       <SingleColumn>
-        <HeadingInfoContainer>
-          <HeadingTitle>Past Events</HeadingTitle>
-        </HeadingInfoContainer>
-
         <Content>
           {cards.map((card, i) => (
             <Card key={i} reversed={i % 2 === 1}>
