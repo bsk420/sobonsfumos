@@ -68,7 +68,7 @@ export default () => {
         <Content>
           {cards.map((card, i) => (
             <Card key={i} reversed={i % 2 === 1}>
-              <Image imageSrc={card.imageSrc} style={{ object-fit: contain; }} />
+              <Image imageSrc={card.imageSrc} style={{ objectFit: "contain", width: "100%", height: "100%" }} />
               <Details>
                 <Subtitle>{card.subtitle}</Subtitle>
                 <Title>{card.title}</Title>
