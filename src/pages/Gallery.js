@@ -56,7 +56,7 @@ const Carousel = () => {
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index}>
-            <img src={image} alt={`Gallery Image ${index + 1}`} />
+            <img src={image} />
           </div>
         ))}
       </Slider>
