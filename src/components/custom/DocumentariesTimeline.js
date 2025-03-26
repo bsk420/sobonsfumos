@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { ReactComponent as SvgDotPatternIcon } from "../../images/dot-pattern.svg";
+import DocumentarieImage from "../../images/beldi_doc.png";
 import { SectionHeading as HeadingTitle } from "../misc/Headings.js";
 
 
@@ -44,9 +45,8 @@ const SvgDotPattern4 = tw(
 export default () => {
   const cards = [
     {
-      imageTo: 'https://youtu.be/EY8ie9QF944',
-      imageSrc:
-        "https://i.imgur.com/xROYaFv.png",
+      imageTo: 'https://www.youtube.com/watch?v=EY8ie9QF944',
+      imageSrc: DocumentarieImage,
       subtitle: "19th Nov 2023",
       title: "BELDI (2023)",
       description: "Our first documentary, exploring the North of Morocco and the Cannabis culture that exists in the Rif, giving light to both sides of it's culture.",

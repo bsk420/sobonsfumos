@@ -4,6 +4,13 @@ import tw from "twin.macro";
 import { ReactComponent as SvgDotPatternIcon } from "../../images/dot-pattern.svg";
 import { SectionHeading as HeadingTitle } from "../misc/Headings.js";
 
+import EventCannadouro from "../../images/event_canna.png";
+import EventFSS1 from "../../images/event_fumos_ss1.png";
+import EventFSS2 from "../../images/event_fumos_ss2.png";
+import EventExperience from "../../images/event_morocexp.jpeg";
+import EventMorocanWay from "../../images/event_morocway.png";
+
+
 const Container = tw.div`relative`;
 
 const SingleColumn = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
@@ -42,7 +49,7 @@ export default () => {
   const cards = [
     {
       imageSrc:
-        "https://i.imgur.com/nEWDaKd.png",
+        EventCannadouro,
       subtitle: "Concluded",
       title: "Cannadouro 2023",
       description:
@@ -52,7 +59,7 @@ export default () => {
 
     {
       imageSrc:
-        "https://i.imgur.com/yl4TCj5.png",
+        EventFSS1,
       subtitle: "Concluded",
       title: "FUMOS'S SECRET SESH",
       description:
@@ -62,7 +69,7 @@ export default () => {
 
     {
       imageSrc:
-        "https://i.imgur.com/LL6iDW9.png",
+        EventMorocanWay,
       subtitle: "Concluded",
       title: "MOROCCAN WAY",
       description:
@@ -72,7 +79,7 @@ export default () => {
 
     {
       imageSrc:
-        "https://i.imgur.com/PSUJYxL.jpeg",
+        EventExperience,
       subtitle: "Concluded",
       title: "MOROCCO'S SBF EXPERIENCE 2024",
       description:
@@ -82,7 +89,7 @@ export default () => {
 
     {
       imageSrc:
-        "https://i.imgur.com/yl4TCj5.png",
+        EventFSS2,
       subtitle: "Concluded",
       title: "FUMOS'S SECRET SESH V2",
       description:

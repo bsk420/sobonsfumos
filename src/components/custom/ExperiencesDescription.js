@@ -2,10 +2,16 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { SectionHeading } from "components/misc/Headings.js";
+import { PrimaryButton } from "components/misc/Buttons.js";
+
+
 
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center`;
+const SingleColumn = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
+
+
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
 const ImageColumn = tw(Column)`md:w-6/12 flex-shrink-0 relative`;
 const TextColumn = styled(Column)(props => [
@@ -48,9 +54,18 @@ export default ({
           </TextContent>
         </TextColumn>
         <ImageColumn >
-          <Image style={{ position: "relative", top: '-4vh', width: '100%', height: '100%', paddingLeft: '20vh', paddingRight: '2'}} src="https://i.imgur.com/FQmS2ib.jpeg"></Image>
+          <Image style={{ position: "relative", top: '-4vh', width: '100%', height: '100%', paddingLeft: '20vh', paddingRight: '2'}} src="/images/new_experience.jpeg"></Image>
         </ImageColumn>
       </TwoColumn>
+      <SingleColumn>
+          <center>
+          <a href="/sbfexperience.pdf">
+            <PrimaryButton>
+              More information.
+            </PrimaryButton>
+          </a>
+          </center>
+      </SingleColumn>
     </Container>
   );
 };

@@ -3,9 +3,9 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
-import LogoImage from "../../images/sobonsfumos/sbftv-logo512.png";
-import YoutubeIcon from "images/sobonsfumos/icons/youtube94.png";
-import InstagramIcon from "images/sobonsfumos/icons/instagram94.png";
+import LogoImage from "../../images/sbftv-logo512.png";
+import YoutubeIcon from "images/icons/youtube94.png";
+import InstagramIcon from "images/icons/instagram94.png";
 
 const Container = tw.div`relative text-white -mb-8 -mx-8 px-8 py-20 lg:py-24`;
 const Content = tw.div`max-w-screen-xl mx-auto relative z-10`;

@@ -5,7 +5,6 @@ import tw from "twin.macro";
 
 import ExperiencesHero from "components/hero/ExperiencesHero.js";
 import ExperiencesDescription from "components/custom/ExperiencesDescription.js";
-import ExperiencesTimeline from "components/custom/ExperiencesTimeline.js";
 import Footer from "components/footers/Footer.js";
 
 
@@ -27,9 +26,8 @@ export default () => {
   return (
     <AnimationRevealPage disabled>
       <Container>
-        <ExperiencesHero />
-        <ExperiencesDescription />
-        <ExperiencesTimeline />
+      <ExperiencesHero />
+      <ExperiencesDescription />
         <Footer />
       </Container>
     </AnimationRevealPage>
