@@ -61,7 +61,7 @@ export default ({
           <center>
           <a href="/sbfexperience.pdf">
             <PrimaryButton>
-              More information.
+              Click here for more informations.
             </PrimaryButton>
           </a>
           </center>
