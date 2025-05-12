@@ -76,11 +76,8 @@ export default () => {
           </LogoContainer>
           <CopywrightNotice>&copy; 2017 SóBonsFumosTV. All Rights Reserved.</CopywrightNotice>
           <SocialLinksContainer>
-            <SocialLink href="https://instagram.com/so.bons.fumos">
+            <SocialLink href="https://instagram.com/tomas.sbftv">
             < SocialIcon src={InstagramIcon} />
-            </SocialLink>
-            <SocialLink href="https://instagram.com/sbf__tv">
-              <SocialIcon src={InstagramIcon} />
             </SocialLink>
             <SocialLink href="https://www.youtube.com/channel/UCwOAIg3dFpZcmXKOuiBLCNw">
               <SocialIcon src={YoutubeIcon} />
